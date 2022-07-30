@@ -1,0 +1,85 @@
+
+
+.icon:hover{
+    .font{
+        color: rgb(0, 0, 0);
+    }
+}
+
+    
+.material-icons-outlined {
+    font-size: 28px;
+    color: rgba(0, 0, 0, 0.349);
+    cursor: pointer;
+
+}
+.material-icons-outlined:hover {
+    color: rgb(0, 0, 0);
+
+    .font{
+        color: rgb(0, 0, 0);
+        background-color: #eaafaf;
+        
+    }
+
+
+}
+
+.font{
+    font-family: 'awesome';
+    font-size: 2vw;
+    color: rgba(0, 0, 0, 0.349);
+}
+
+//Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 575px) {
+
+    .home{
+        height: 60vh;
+        margin-top: 30px;
+    }
+    .btnLink{
+        font-size: 4vw;
+    }
+
+    .fontTitles{
+        font-size: 7vw;
+    }
+
+    
+
+    .font{
+        color: rgba(0, 0, 0, 0.338);
+        font-size: 4vw;
+       
+   }
+}
+
+@media only screen and (min-width: 576px) {
+
+}
+    
+
+/* medium devices (tablets, 768 px and up) */ 
+@media only screen and (min-width: 786px) {
+
+}
+    
+
+/* large devices (desktops, 992 px and up) */ 
+@media only screen and (min-width: 992px) {
+
+}
+
+/* x-large devices (desktops, 1200 px and up) */ 
+@media only screen and (min-width: 1200px) {
+    
+
+}
+    
+
+/* XX- Large devices (larger desktops, 1400px and up) */ 
+@media only screen and (min-width: 1400px) {
+
+}
+    

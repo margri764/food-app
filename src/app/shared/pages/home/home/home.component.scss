@@ -1,0 +1,184 @@
+
+
+
+.home{
+    height: 50vw;
+    background-image: url(../../../../../assets/home-picture2.png);
+    // background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-top: 30px;
+}
+
+
+
+.fontTitles{
+    font-family: 'awesome';
+    font-size: 3vw;
+    color: whitesmoke;
+}
+
+.btn{
+    margin-bottom: 20px;
+    // margin-top:10px;
+    opacity: 0.7;
+    width: 50px;
+    height: 50px;
+    
+    box-shadow: 6px 4px 3px -2px rgba(0,0,0,0.9);
+-webkit-box-shadow: 6px 4px 43px -2px rgba(0,0,0,0.9);
+-moz-box-shadow: 6px 4px 43px -2px rgba(0,0,0,0.9);
+}
+
+.btnLink{
+    color: white;
+    font-family: 'awesome';
+    border-color: white;
+    font-size: 1.3vw;
+    border: 1px solid whitesmoke;
+    background-color: transparent;
+    margin-bottom: 30px;
+    margin-top: 20px;
+    border-radius: 5px;
+    line-height: 2em;
+    cursor: pointer;
+} 
+
+.btnLink:hover{
+    background-color: white;
+    color: black;
+
+}
+
+
+
+
+.back-salmon{
+    height: 400px;
+    border-radius: 49px;
+
+    background: rgba(211,172,8,0.44);
+    background: radial-gradient(circle farthest-corner at center center, rgba(211,172,8,0.44) 0%, #fccc04 80%);
+    background: -webkit-radial-gradient(circle farthest-corner at center center, rgba(211,172,8,0.44) 0%, #fccc04 80%);
+    background: -moz-radial-gradient(circle farthest-corner at center center, rgba(211,172,8,0.44) 0%, #fccc04 80%);
+    
+    box-shadow: 18px 21px 14px -5px rgba(0,0,0,0.15);
+    -webkit-box-shadow: 18px 21px 14px -5px rgba(0,0,0,0.15);
+    -moz-box-shadow: 18px 21px 14px -5px rgba(0,0,0,0.15);
+
+    .fontTitles{
+        color: brown;
+        margin-top: 0px;
+        font-weight: 400;
+    }
+    .btnLink{
+        color: brown;
+        
+    }
+    img{
+        filter: drop-shadow(10px 20px 1px rgba(0,0,0,0.06));
+        transform: scale(1.2);
+        
+    }
+}
+
+
+
+
+
+
+
+//Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 575px) {
+
+    .home{
+        height: 60vh;
+        margin-top: 30px;
+    }
+    .btnLink{
+        font-size: 4vw;
+    }
+
+    .fontTitles{
+        font-size: 7vw;
+    }
+
+    .wood{
+        height: 300px;
+        margin-top: 10px;
+    }
+
+    .wood:hover{
+        height: 300px;
+        margin-top: 10px;
+     
+       .fontTitles{
+            font-size: 6vw;
+        }
+    }
+
+    .paint{
+        height: 300px;
+        margin-top: 10px;
+    }
+
+    .paint:hover{
+        height: 300px;
+        margin-top: 10px;
+     
+       .fontTitles{
+            font-size: 6vw;
+        }
+    }
+
+    .stencil{
+        height: 300px;
+        margin-top: 10px;
+    }
+
+    .stencil:hover{
+        height: 300px;
+        margin-top: 10px;
+     
+       .fontTitles{
+            font-size: 6vw;
+        }
+    }
+
+    
+
+    .font{
+        color: rgba(0, 0, 0, 0.338);
+        font-size: 4vw;
+       
+   }
+}
+
+@media only screen and (min-width: 576px) {
+
+}
+    
+
+/* medium devices (tablets, 768 px and up) */ 
+@media only screen and (min-width: 786px) {
+
+}
+    
+
+/* large devices (desktops, 992 px and up) */ 
+@media only screen and (min-width: 992px) {
+
+}
+
+/* x-large devices (desktops, 1200 px and up) */ 
+@media only screen and (min-width: 1200px) {
+    
+
+}
+    
+
+/* XX- Large devices (larger desktops, 1400px and up) */ 
+@media only screen and (min-width: 1400px) {
+
+}
+    
