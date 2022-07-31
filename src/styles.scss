@@ -35,3 +35,17 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
     'GRAD' 200,
     'opsz' 48
   }
+
+.mat-dialog-container {
+    border-radius: 10px !important;
+    margin: 0 auto;
+}
+
+
+  .custom-modalbox {
+    mat-dialog-container {
+        padding: 0px!important;
+        width: 600px!important;
+        // height: 474px;
+     }
+}

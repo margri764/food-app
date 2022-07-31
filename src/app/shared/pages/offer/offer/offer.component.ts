@@ -21,9 +21,6 @@ export class OfferComponent implements OnInit {
     this._bottomSheet.open(MessageComponent);
   }
 
-  closeBottomSheet() {
-    this._bottomSheet.ngOnDestroy;
-  }
 
 }
 

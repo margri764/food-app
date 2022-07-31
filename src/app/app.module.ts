@@ -12,6 +12,7 @@ import { FlexLayoutModule } from '@angular/flex-layout';
 import { FooterComponent } from './shared/pages/footer/footer/footer.component';
 import { OfferComponent } from './shared/pages/offer/offer/offer.component';
 import { MessageComponent } from './shared/pages/message/message/message.component';
+import { PopusComponent } from './shared/pages/popus/popus/popus.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { MessageComponent } from './shared/pages/message/message/message.compone
     HeaderComponent,
     FooterComponent,
     OfferComponent,
-    MessageComponent
+    MessageComponent,
+    PopusComponent
   ],
   imports: [
     BrowserModule,
