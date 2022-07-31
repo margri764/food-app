@@ -10,6 +10,8 @@ import { HeaderComponent } from './shared/pages/header/header/header.component';
 import { MaterialModule } from './material/material.module';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { FooterComponent } from './shared/pages/footer/footer/footer.component';
+import { OfferComponent } from './shared/pages/offer/offer/offer.component';
+import { MessageComponent } from './shared/pages/message/message/message.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +19,9 @@ import { FooterComponent } from './shared/pages/footer/footer/footer.component';
     MenuComponent,
     HomeComponent,
     HeaderComponent,
-    FooterComponent
+    FooterComponent,
+    OfferComponent,
+    MessageComponent
   ],
   imports: [
     BrowserModule,

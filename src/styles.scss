@@ -2,3 +2,36 @@
 
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+
+@font-face {
+    font-family:'awesome';
+    src: url(/assets/font/fontawesome-webfont.ttf);
+     
+  }
+
+  .material-icons-outlined {
+    font-size: 28px;
+    color: rgba(0, 0, 0, 0.349);
+    cursor: pointer;
+
+}
+.material-icons-outlined:hover {
+    color: rgb(0, 0, 0);
+
+    .font{
+        color: rgb(0, 0, 0);
+        background-color: #eaafaf;
+        
+    }
+
+
+}
+
+.material-symbols-outlined {
+    font-variation-settings:
+    'FILL' 0,
+    'wght' 200,
+    'GRAD' 200,
+    'opsz' 48
+  }

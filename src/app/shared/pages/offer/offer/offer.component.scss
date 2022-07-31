@@ -1,41 +1,32 @@
 
 
-.icon:hover{
-    .font{
-        color: rgb(0, 0, 0);
-    }
-}
-
-    
-
-
-.font{
-    font-family: 'awesome';
-    font-size: 2vw;
-    color: rgba(0, 0, 0, 0.349);
-}
-
 //Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 575px) {
 
-    .home{
-        height: 60vh;
-        margin-top: 30px;
-    }
-    .btnLink{
+.btnLink{
+    color: rgb(22, 22, 22);
+    font-family: 'awesome';
+    border: 1px solid #fccc04;
+    font-weight: bold;
+    font-size: 4vw;
+    background-color: #fccc04;
+    border-radius: 20px;
+    line-height: 2.5em;
+
+box-shadow: 2px 0px 18px 4px rgba(61,61,61,0.42);
+-webkit-box-shadow: 2px 0px 18px 4px rgba(61,61,61,0.42);
+-moz-box-shadow: 2px 0px 18px 4px rgba(61,61,61,0.42);
+}
+
+
+.btnLink:hover{
+    background-color: white;
+    color: black;
+}    
+
+.font{
+        color: rgba(0, 0, 0, 4);
         font-size: 4vw;
-    }
-
-    .fontTitles{
-        font-size: 7vw;
-    }
-
-    
-
-    .font{
-        color: rgba(0, 0, 0, 0.338);
-        font-size: 4vw;
-       
    }
 }
 

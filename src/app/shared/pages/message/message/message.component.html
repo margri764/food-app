@@ -1,0 +1,44 @@
+
+
+<div fxLayout="row wrap" fxLayoutAlign="center start" style="height: 600px">
+
+    <img src="assets/logo.png" alt="" style="width: 100vw;">
+
+    <div fxLayout="row wrap" fxLayoutAlign="end" fxFlex="100" style="margin-top: 20px; margin-right: 20px;">
+        <span class="material-symbols-outlined" (click)="closeBottomSheet()">close</span>
+    </div>
+
+    <div fxLayout="row wrap" fxLayoutAlign="space-between" fxFlex="90" style="margin-top: 20px">
+        
+        <h1 styles="font-family:awesome">Hamburguesa</h1>
+        <p fxFlex="100">Hamburguesa de carne de ternera</p>
+        <p fxFlex="100">Lechuga, tomate</p>
+        <p>Queso Cheddar</p>
+
+
+    </div>
+
+    <div fxLayout="row wrap" fxLayoutAlign="space-between" fxFlex="40" style="margin-top: 20px">
+      
+        <div fxLayout="row wrap" fxLayoutAlign="center" fxFlex="12" >
+            <button mat-mini-fab aria-label="Example icon button with a delete icon" (click)="decrement()">
+                <mat-icon>remove</mat-icon>
+            </button>
+        </div>
+
+        <div fxLayout="row wrap" fxLayoutAlign="center center" fxFlex="12">
+            <mat-label style="font-size: 6vw;">{{value}}</mat-label>
+        </div>
+
+        <div fxLayout="row wrap" fxLayoutAlign="center" fxFlex="12">
+            <button mat-mini-fab aria-label="Example icon button with a delete icon" (click)="increment()">
+                <mat-icon>add</mat-icon>
+            </button>
+        </div>
+
+    </div>
+
+    <div fxLayout="row wrap" fxLayoutAlign="center" fxFlex="100">
+        <button class="btnLink"  fxFlex="46" style="margin-top: 15px">Comprar</button>
+    </div>
+</div>

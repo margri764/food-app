@@ -1,0 +1,61 @@
+
+
+//Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 575px) {
+
+    .btnLink{
+        color: rgb(22, 22, 22);
+        font-family: 'awesome';
+        border: 1px solid #fccc04;
+        font-weight: bold;
+        font-size: 4vw;
+        background-color: #fccc04;
+        border-radius: 20px;
+        line-height: 2.5em;
+    
+    box-shadow: 2px 0px 18px 4px rgba(61,61,61,0.42);
+    -webkit-box-shadow: 2px 0px 18px 4px rgba(61,61,61,0.42);
+    -moz-box-shadow: 2px 0px 18px 4px rgba(61,61,61,0.42);
+    }
+    
+    
+    .btnLink:hover{
+        background-color: white;
+        color: black;
+    }    
+    
+    .font{
+            color: rgba(0, 0, 0, 4);
+            font-size: 4vw;
+       }
+    }
+    
+    @media only screen and (min-width: 576px) {
+    
+    }
+        
+    
+    /* medium devices (tablets, 768 px and up) */ 
+    @media only screen and (min-width: 786px) {
+    
+    }
+        
+    
+    /* large devices (desktops, 992 px and up) */ 
+    @media only screen and (min-width: 992px) {
+    
+    }
+    
+    /* x-large devices (desktops, 1200 px and up) */ 
+    @media only screen and (min-width: 1200px) {
+        
+    
+    }
+        
+    
+    /* XX- Large devices (larger desktops, 1400px and up) */ 
+    @media only screen and (min-width: 1400px) {
+    
+    }
+        
+    

@@ -8,6 +8,7 @@
 
             <div class="sticky-header">
           
+              <app-header *ngIf="!(router.url === '/home')"><</app-header>
             
             </div>
             <div class="content-wrapper">
@@ -15,9 +16,7 @@
                 <div class="content">
            
       
-                  <!-- <app-header></app-header> -->
       
-                  <!-- <app-slide-up *ngIf="!(router.url === '/contact-us')"></app-slide-up> -->
                 
               
                  <router-outlet> </router-outlet> 
@@ -27,9 +26,9 @@
                
                 </div>
       
-                <div class="footer">
-                  <app-footer></app-footer>
-                </div> 
-            </div> 
-        </div>
+              </div> 
+              <div class="sticky-header">
+                <app-footer></app-footer>
+              </div> 
+            </div>
       
