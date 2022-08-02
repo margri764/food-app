@@ -15,6 +15,8 @@ import { MessageComponent } from './shared/pages/message/message/message.compone
 import { PopusComponent } from './shared/pages/popus/popus/popus.component';
 import { SliderComponent } from './shared/pages/slider/slider/slider.component';
 import { StartComponent } from './shared/pages/start/start/start.component';
+import { DeliveryComponent } from './shared/pages/delivery/delivery.component';
+import { LocationComponent } from './shared/messages/location/location/location.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +29,9 @@ import { StartComponent } from './shared/pages/start/start/start.component';
     MessageComponent,
     PopusComponent,
     SliderComponent,
-    StartComponent
+    StartComponent,
+    DeliveryComponent,
+    LocationComponent
   ],
   imports: [
     BrowserModule,

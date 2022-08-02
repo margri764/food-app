@@ -3,18 +3,22 @@
 
  
     <div  fxLayout="row wrap"  fxLayoutAlign="center center"  class="logo-header" fxFlex="100">
-        <img src="assets/logo-header.png" alt="" fxFlex="35">
-        <!-- <h1 fxFlex="100">HOLA!!!</h1> -->
+        <!-- <img src="assets/logo-header.png" alt="" fxFlex="15"> -->
+        
+        
+        <form  fxLayout="row wrap" fxLayoutAlign="center center" style="margin-top: 25px; " fxFlex="100">
+            <mat-form-field  appearance="outline"   fxFlex="90" >
+                <input type="text" matInput  placeholder="        Buscar en Centro Cocina!!!">
+                <mat-icon matSuffix style="transform:scale(1.7); color: red; margin-right: 20px;">search</mat-icon>
+            </mat-form-field>
+        </form>
     </div>
     
-    
-    <form  fxLayout="row wrap" fxLayoutAlign="center center" style="margin-top: 10px; " fxFlex="100">
-        <mat-form-field class="example-full-width" appearance="outline" fxFlex="90" style="margin-top: 1em; line-height: 2.6em; "  >
-            <input type="text" matInput placeholder="Buscar deliciosa comida en Centro Cocina!!!">
-            <mat-icon matSuffix style="transform:scale(1.7)">search</mat-icon>
-        </mat-form-field>
-    </form>
-    
+    <div  fxLayout="row wrap"  fxLayoutAlign="start" fxFlex="95"  style="margin-top: 15px">
+        <h1 style="font-family: awesome; font-size: 5vw;" fxFlex="100">Hola, <b>Marcelo!!</b></h1>
+        <h1 style="font-family: awesome; font-size: 5vw; ">Necesitás <b style="color: red; cursor: pointer;" routerLink="../delivery">delivery?</b></h1>
+    </div>    
+
     <div fxLayout="row wrap" fxLayoutAlign="space-between " fxFlex="98" class="logo-container" style="margin-top: 30px">
         <img src="assets/logo-pizza.png" alt="" fxFlex="23" class="mini-logo" >
         <img src="assets/logo-hamburger.png" alt="" fxFlex="23" class="mini-logo">
@@ -34,11 +38,6 @@
         <img src="assets/logo.png" alt="" fxFlex="100">
     </div> -->
   
-    <!-- <div  fxLayout="row wrap"  fxLayoutAlign="center center" fxFlex="95"  style="margin-top: 40px">
-        <h1 style="font-family: awesome; font-size: 5vw; ">Te damos la bienvenida a Centro Cocina!!</h1>
-        <p>En nuestra app podes encontrar todo los que necesitás!!
-         Podemos ofrecerte lo mas rico en Fast Food y tambien disponemos una gran variedad de opciones de comidas saludables, que te van a encantar!!!</p> <p class="material-icons"> favorite_border</p>
-    </div>     -->
 
     <div  fxLayout="row wrap"  fxLayoutAlign="center center" fxFlex="95"  style="margin-top: 40px">
         <h1 fxLayoutAlign="center "fxFlex="100">Nuestro Menú</h1>
