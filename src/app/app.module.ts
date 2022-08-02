@@ -13,6 +13,8 @@ import { FooterComponent } from './shared/pages/footer/footer/footer.component';
 import { OfferComponent } from './shared/pages/offer/offer/offer.component';
 import { MessageComponent } from './shared/pages/message/message/message.component';
 import { PopusComponent } from './shared/pages/popus/popus/popus.component';
+import { SliderComponent } from './shared/pages/slider/slider/slider.component';
+import { StartComponent } from './shared/pages/start/start/start.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +25,9 @@ import { PopusComponent } from './shared/pages/popus/popus/popus.component';
     FooterComponent,
     OfferComponent,
     MessageComponent,
-    PopusComponent
+    PopusComponent,
+    SliderComponent,
+    StartComponent
   ],
   imports: [
     BrowserModule,

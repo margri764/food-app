@@ -20,10 +20,11 @@ export class AppComponent implements OnInit{
   }
   ngOnInit(): void {
 
-    setTimeout(()=>{
+    this.router.navigateByUrl('start')
+    // setTimeout(()=>{
 
-      this.openDialog();
-    },10000 )
+      // this.openDialog();
+    // },10000 )
 
   }
 

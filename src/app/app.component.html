@@ -8,7 +8,7 @@
 
             <div class="sticky-header">
           
-              <app-header *ngIf="!(router.url === '/home')"></app-header>
+              <app-header *ngIf="!(router.url === '/home' || router.url === '/start')"></app-header>
             
             </div>
             <div class="content-wrapper">
@@ -28,7 +28,8 @@
       
               </div> 
               <div class="sticky-header">
-                <app-footer></app-footer>
+              <app-footer *ngIf="!(router.url === '/start')"></app-footer>
+
               </div> 
             </div>
       

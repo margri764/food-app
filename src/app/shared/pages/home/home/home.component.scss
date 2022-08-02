@@ -1,7 +1,24 @@
 
 
+.material-symbols-outlined{
+    transform: scale(2);
+}
 
+.icon{
+    border-radius: 35px;
+    border: 2px solid rgb(225, 51, 25);
+    height: 80px;
+    background-color: #e5e5e530;
+}
 
+.logo-container{
+    border-radius: 35px;
+    background-color: #e5e5e530;
+}
+
+.logo-header{
+    background-color: #fccc04;
+}
 
 .fontTitles{
     font-family: 'awesome';
@@ -41,12 +58,22 @@
 
 }
 
+.logo{
+    box-shadow: 2px 10px 12px 0px rgba(252,204,4,0.19);
+-webkit-box-shadow: 2px 10px 12px 0px rgba(252,204,4,0.19);
+-moz-box-shadow: 2px 10px 12px 0px rgba(252,204,4,0.19);
+}
+
+.mini-logo{
+
+    filter: drop-shadow(0px 0px 3px #000000);
+    -webkit-filter: drop-shadow(0px 0px 3px #000000);
+    -moz-filter: drop-shadow(0px 0px 3px #000000);
+}
 
 
-
-.back-salmon{
-    height: 400px;
-    border-radius: 49px;
+.hamburger{
+    border-radius: 20px;
 
     background: rgba(211,172,8,0.44);
     background: radial-gradient(circle farthest-corner at center center, rgba(211,172,8,0.44) 0%, #fccc04 80%);
@@ -67,8 +94,8 @@
         
     }
     img{
-        filter: drop-shadow(10px 20px 1px rgba(0,0,0,0.06));
-        transform: scale(1.2);
+        filter: drop-shadow(10px 10px 1px rgba(0,0,0,0.06));
+        transform: scale(1.3);
         
     }
 }
