@@ -1,5 +1,6 @@
 import { Component, NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { SuccessComponent } from './shared/message/success/success/success.component';
 
 // Components
 import { DeliveryComponent } from './shared/pages/delivery/delivery.component';
@@ -12,6 +13,11 @@ const routes: Routes = [
   {
     path: 'start',
     component: StartComponent
+  },
+
+  {
+    path: 'success',
+    component: SuccessComponent
   },
   {
     path: 'delivery',

@@ -17,6 +17,8 @@ import { SliderComponent } from './shared/pages/slider/slider/slider.component';
 import { StartComponent } from './shared/pages/start/start/start.component';
 import { DeliveryComponent } from './shared/pages/delivery/delivery.component';
 import { LocationComponent } from './shared/messages/location/location/location.component';
+import { SuccessComponent } from './shared/message/success/success/success.component';
+import { HamburgerComponent } from './shared/pages/hamburger/hamburger/hamburger.component';
 
 @NgModule({
   declarations: [
@@ -31,7 +33,9 @@ import { LocationComponent } from './shared/messages/location/location/location.
     SliderComponent,
     StartComponent,
     DeliveryComponent,
-    LocationComponent
+    LocationComponent,
+    SuccessComponent,
+    HamburgerComponent
   ],
   imports: [
     BrowserModule,
