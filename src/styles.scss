@@ -8,6 +8,17 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
     font-family:'awesome';
     src: url(/assets/font/fontawesome-webfont.ttf);
      
+}
+
+@font-face {
+  font-family:'poppins-light';
+  src: url(/assets/font/poppins/Poppins-Light.ttf);
+   
+}
+
+  @font-face{
+    font-family: 'Open Sans', sans-serif;
+    src: url(https://fonts.googleapis.com/css2?family=Open+Sans&display=swap);
   }
 
   .material-icons-outlined {

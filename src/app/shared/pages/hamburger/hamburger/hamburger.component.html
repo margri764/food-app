@@ -1,1 +1,174 @@
-<p>hamburger works!</p>
+
+
+<div fxLayout="row wrap" fxLayoutAlign="center">
+
+    <div fxLayout="row wrap" fxLayoutAlign="center center"  fxFlex="100">
+
+        <div fxLayout="row wrap" fxLayoutAlign="center" fxFlex="50" style="margin-top: 50px;">
+            <img src="assets/food1.png" alt="" fxFlex="95" style="transform: scale(1.1)">
+        </div>
+
+        <div fxLayout="row wrap" fxLayoutAlign="center" fxFlex="50" style="margin-top: 50px;">
+            <div fxLayout="row wrap" fxLayoutAlign="center center" fxFlex="95" class="font" style="color: red;">
+                <p fxFlex="90" fxLayoutAlign="center center">Hamburguesa Simple </p>
+                <p fxFlex="90" fxLayoutAlign="center"><b>$ 760,00</b></p>
+            </div>
+
+            <!-- counter -->
+        <div fxLayout="row wrap" fxLayoutAlign="space-between" fxFlex="40" style="margin-top: 20px">
+    
+            <div fxLayout="row wrap" fxLayoutAlign="center" fxFlex="12" >
+                <button mat-mini-fab aria-label="Example icon button with a delete icon" (click)="decrement()">
+                    <mat-icon>remove</mat-icon>
+                </button>
+            </div>
+    
+            <div fxLayout="row wrap" fxLayoutAlign="center center" fxFlex="12">
+                <mat-label style="font-size: 4vw;">{{value}}</mat-label>
+            </div>
+    
+            <div fxLayout="row wrap" fxLayoutAlign="center" fxFlex="12">
+                <button mat-mini-fab aria-label="Example icon button with a delete icon" (click)="increment()">
+                    <mat-icon>add</mat-icon>
+                </button>
+            </div>
+    
+        </div>
+            <!-- end counter -->
+    </div>
+   </div>
+
+    <div fxLayout="row wrap" fxLayoutAlign="center" fxFlex="99" class="whiteframe" style="margin-top: 30px;" class="font" >
+        <mat-card fxFlex="99" class="font">
+            <mat-card-title >Detalles</mat-card-title>
+            <mat-card-subtitle >Hamburguesa simple</mat-card-subtitle>
+            <mat-card-content >
+                <p>Nuestra hamburguesa está hecha con carne seleccionada de primera calidad</p> <br>
+                <p><b>Ingredientes</b></p>
+                <p>Lechuga, tomate, cebolla y queso</p>
+
+            </mat-card-content>
+            <mat-card-actions>
+           
+             <div fxLayout="row wrap"  fxLayoutAlign="start center" fxFlex="100" style="margin-top: 5px">
+                    <i class="material-icons" style="color: red;" >star_rate</i> 
+                    <span class="font" style="font-size: 3vw;" fxFlex="50" > (<b>737</b> comentarios)</span>
+                </div>
+            </mat-card-actions>
+        </mat-card>
+    
+    </div>  
+    
+    <div fxLayout="row wrap" fxLayoutAlign="center center" fxFlex="98" class="whiteframe" style="margin-top: 30px;" class="font">
+        <p fxFlex="98" > Extras</p>
+
+        <div fxLayout="row wrap" fxLayoutAlign="space-between center" fxFlex="98"  style="margin-top: 10px;" >
+        
+            <!-- papas fritas -->
+            <div fxLayout="row wrap" fxLayoutAlign="space-between center"  fxFlex="100">
+                <div fxLayout="row wrap" fxLayoutAlign="start center" fxFlex="50" style="">
+                <span style="font-size: 4vw;" >Papas fritas</span>
+                </div>
+
+                <div fxLayout="row wrap" fxLayoutAlign="center center" fxFlex="50" style="">
+                    <!-- counter -->
+                    <div fxLayout="row wrap" fxLayoutAlign="space-between" fxFlex="50"  >
+
+                        <div fxLayout="row wrap" fxLayoutAlign="center" fxFlex="12" >
+                            <button mat-mini-fab aria-label="Example icon button with a delete icon" (click)="decrement()" >
+                                <mat-icon>remove</mat-icon>
+                            </button>
+                        </div>
+                
+                        <div fxLayout="row wrap" fxLayoutAlign="center center" fxFlex="12">
+                            <mat-label style="font-size: 4vw;">{{value}}</mat-label>
+                        </div>
+                
+                        <div fxLayout="row wrap" fxLayoutAlign="center" fxFlex="12">
+                            <button mat-mini-fab aria-label="Example icon button with a delete icon" (click)="increment()">
+                                <mat-icon>add</mat-icon>
+                            </button>
+                        </div>
+                    </div>
+                <!-- end counter -->
+            </div>
+           </div>
+         <!-- end papas fritas -->
+
+            <!-- coca cola -->
+            <div fxLayout="row wrap" fxLayoutAlign="space-between center"  fxFlex="100" style="margin-top: 10px">
+                <div fxLayout="row wrap" fxLayoutAlign="start center" fxFlex="50" style="">
+                    <span style="font-size: 4vw;" >Coca Cola</span>
+                </div>
+ 
+             <div fxLayout="row wrap" fxLayoutAlign="center center" fxFlex="50" style="">
+                    <!-- counter -->
+                 <div fxLayout="row wrap" fxLayoutAlign="space-between" fxFlex="50"  >
+ 
+                     <div fxLayout="row wrap" fxLayoutAlign="center" fxFlex="12" >
+                         <button mat-mini-fab aria-label="Example icon button with a delete icon" (click)="decrement()" >
+                             <mat-icon>remove</mat-icon>
+                         </button>
+                     </div>
+             
+                     <div fxLayout="row wrap" fxLayoutAlign="center center" fxFlex="12">
+                         <mat-label style="font-size: 4vw;">{{value}}</mat-label>
+                     </div>
+             
+                     <div fxLayout="row wrap" fxLayoutAlign="center" fxFlex="12">
+                         <button mat-mini-fab aria-label="Example icon button with a delete icon" (click)="increment()">
+                             <mat-icon>add</mat-icon>
+                         </button>
+                     </div>
+                 </div>
+             <!-- end counter -->
+         </div>
+           </div>
+           <!-- end coca cola -->
+
+            <!-- Helado -->
+            <div fxLayout="row wrap" fxLayoutAlign="space-between center"  fxFlex="100" style="margin-top: 10px">
+            <div fxLayout="row wrap" fxLayoutAlign="start center" fxFlex="50" style="">
+                <span style="font-size: 4vw;" >Helado</span>
+            </div>
+
+            <div fxLayout="row wrap" fxLayoutAlign="center center" fxFlex="50" style="">
+                <!-- counter -->
+                <div fxLayout="row wrap" fxLayoutAlign="space-between" fxFlex="50"  >
+
+                    <div fxLayout="row wrap" fxLayoutAlign="center" fxFlex="12" >
+                        <button mat-mini-fab aria-label="Example icon button with a delete icon" (click)="decrement()" >
+                            <mat-icon>remove</mat-icon>
+                        </button>
+                    </div>
+            
+                    <div fxLayout="row wrap" fxLayoutAlign="center center" fxFlex="12">
+                        <mat-label style="font-size: 4vw;">{{value}}</mat-label>
+                    </div>
+            
+                    <div fxLayout="row wrap" fxLayoutAlign="center" fxFlex="12">
+                        <button mat-mini-fab aria-label="Example icon button with a delete icon" (click)="increment()">
+                            <mat-icon>add</mat-icon>
+                        </button>
+                    </div>
+                </div>
+            <!-- end counter -->
+        </div>
+        </div>
+        <!-- end helado -->
+      </div>  
+
+
+
+    </div>
+<!-- costo -->
+<div fxLayout="row wrap" fxLayoutAlign="space-between center" fxFlex="96" class="whiteframe" style="margin-top: 50px;" class="font">
+    <p  > Total</p>
+    <p style="margin-right: 10px;"><b>$ 1230</b></p>
+</div>    
+
+<button mat-raised-button fxFlex="100" class="font" style=" font-size: 5vw; border-radius: 4px; line-height: 2.5em; background-color: red; color: white; margin-top: 50px; margin-bottom: 10px;" ><i class="material-symbols-outlined" style="transform: scale(1.3);">shopping_bag</i> 
+    &nbsp; &nbsp; Comprar
+ </button>
+
+</div>

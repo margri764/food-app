@@ -7,9 +7,25 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HamburgerComponent implements OnInit {
 
-  constructor() { }
+  value : number= 1;
+
+  constructor(
+
+  ) { }
 
   ngOnInit(): void {
   }
 
+  increment( ){
+    this.value= this.value+1;
+  }
+
+  decrement( ){
+    if(this.value == 1){return;}
+    this.value= this.value-1;
+  }
+
+  
 }
+
+
