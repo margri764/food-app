@@ -30,7 +30,6 @@ export class AppComponent implements OnInit{
 
   openDialog() {
     this.dialog.open(PopusComponent, {
-    //  maxHeight: '50vh',
      height: '400px',
      panelClass:"custom-modalbox",
    });
