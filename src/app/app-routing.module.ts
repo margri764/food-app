@@ -7,6 +7,7 @@ import { DeliveryComponent } from './shared/pages/delivery/delivery.component';
 import { HamburgerComponent } from './shared/pages/hamburger/hamburger/hamburger.component';
 import { HomeComponent } from './shared/pages/home/home/home.component';
 import { OfferComponent } from './shared/pages/offer/offer/offer.component';
+import { ShoppingCartComponent } from './shared/pages/shopping-cart/shopping-cart/shopping-cart.component';
 import { StartComponent } from './shared/pages/start/start/start.component';
 
 const routes: Routes = [
@@ -14,6 +15,10 @@ const routes: Routes = [
   {
     path: 'start',
     component: StartComponent
+  },
+  {
+    path: 'cart',
+    component: ShoppingCartComponent
   },
   {
     path: 'fast-food-h',

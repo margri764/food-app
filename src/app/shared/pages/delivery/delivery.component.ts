@@ -18,19 +18,17 @@ export class DeliveryComponent implements OnInit {
 
 ngOnInit(): void {
 
-  setTimeout(()=>{
-    this.openDialog();
-      }, 2000)
+  // setTimeout(()=>{
+  //   this.openDialog();
+  //     }, 2000)
 }
 
-openBottomSheet() {
-this._bottomSheet.open(LocationComponent);
-}
+
 
 openDialog() {
   this.dialog.open(LocationComponent, {
   //  maxHeight: '50vh',
-   height: '400px',
+  //  height: '70vh',
    panelClass:"custom-modalbox",
  });
 }

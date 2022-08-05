@@ -19,6 +19,7 @@ import { DeliveryComponent } from './shared/pages/delivery/delivery.component';
 import { LocationComponent } from './shared/messages/location/location/location.component';
 import { SuccessComponent } from './shared/message/success/success/success.component';
 import { HamburgerComponent } from './shared/pages/hamburger/hamburger/hamburger.component';
+import { ShoppingCartComponent } from './shared/pages/shopping-cart/shopping-cart/shopping-cart.component';
 
 @NgModule({
   declarations: [
@@ -35,7 +36,8 @@ import { HamburgerComponent } from './shared/pages/hamburger/hamburger/hamburger
     DeliveryComponent,
     LocationComponent,
     SuccessComponent,
-    HamburgerComponent
+    HamburgerComponent,
+    ShoppingCartComponent
   ],
   imports: [
     BrowserModule,
