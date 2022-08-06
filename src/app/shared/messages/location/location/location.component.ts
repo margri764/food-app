@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
-import { SuccessComponent } from 'src/app/shared/message/success/success/success.component';
+import { SuccessComponent } from 'src/app/shared/pages/success/success.component';
 
 @Component({
   selector: 'app-location',

@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { MatBottomSheet } from '@angular/material/bottom-sheet';
-import { MessageComponent } from '../../message/message/message.component';
+import { MessageComponent } from '../message/message.component';
 
 
 @Component({

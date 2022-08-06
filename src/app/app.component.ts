@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
 import { Router } from '@angular/router';
-import { PopusComponent } from './shared/pages/popus/popus/popus.component';
+import { PopusComponent } from './shared/pages/popus/popus.component';
 
 @Component({
   selector: 'app-root',
