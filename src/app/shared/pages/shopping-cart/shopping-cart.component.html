@@ -4,15 +4,54 @@
 
 <div fxLayout="row wrap" fxLayoutAlign="center center" fxFlex="100" >
 
-    <h1 class="font" style="margin-top: 30px; font-size: 6vw;">Tu orden</h1>
+        <div fxLayout="row wrap"  fxLayoutAlign="center center" fxFlex="100" style="margin-top: 25px; margin-left: 25px;">
 
-    <mat-card fxLayout="row wrap" fxLayoutAlign="center center" fxFlex="98" style="margin-top: 20px">
+            <div fxLayout="row wrap" fxLayoutAlign="start center" fxFlex="20" >
+                <button mat-mini-fab  aria-label="Example icon button with a delete icon" style="transform: scale(0.9);" routerLink="../home">
+                    <mat-icon>arrow_back_ios_new</mat-icon>
+                </button>
+            </div>
 
-        <div fxLayout="row wrap" fxLayoutAlign="start center" fxFlex="60" class="font" >
-            <mat-card-title >Hamburguesa Simple </mat-card-title>
-            <mat-card-subtitle >Tomate-lechuga-queso</mat-card-subtitle>
-            <p class="font"> <b>$ 764 </b></p>
+            <div fxLayout="row wrap" fxLayoutAlign="start center" fxFlex="80" >
+                <span class="font" style="font-size:6vw;" >Tu orden</span>
+            </div>  
         </div>
+
+
+    <mat-card fxLayout="row wrap" fxLayoutAlign="center center" fxFlex="98" style="margin-top: 40px">
+
+        <div fxLayout="row wrap" fxLayoutAlign="center center" fxFlex="60" class="font">
+            <mat-card-title fxFlex="100" >Hamburguesa Simple </mat-card-title>
+            <mat-card-subtitle fxFlex="100">Tomate-lechuga-queso</mat-card-subtitle>
+      
+        <div fxLayout="row wrap" fxLayoutAlign="center center" fxFlex="100" class="font" >
+        
+            <!-- counter -->
+            <div fxLayout="row wrap" fxLayoutAlign="space-around center" fxFlex="40"  class="incrementer">
+    
+               <div fxLayout="row wrap" fxLayoutAlign="center center" fxFlex="10" (click)="decrement()" >
+                       <i class="material-symbols-outlined">remove</i>
+               </div>
+       
+               <div fxLayout="row wrap" fxLayoutAlign="center center" fxFlex="10">
+                   <mat-label style="font-size: 4vw;">{{value}}</mat-label>
+               </div>
+       
+               <div fxLayout="row wrap" fxLayoutAlign="center center" fxFlex="10" (click)="increment()">
+                       <i class="material-symbols-outlined">add</i>
+               </div>
+           
+           </div>
+               <!-- end counter -->
+
+               <div fxLayout="row wrap" fxLayoutAlign="center center" fxFlex="60">
+                  <span class="font" > <b>$ 764 </b></span>
+              </div>
+        </div>
+
+        </div>
+
+
 
         <div fxLayout="row wrap" fxLayoutAlign="center center" fxFlex="40">
             <div fxLayout="row wrap" fxLayoutAlign="end center" fxFlex="100">
@@ -24,31 +63,41 @@
         </div>
     </mat-card>
 
-    <mat-card fxLayout="row wrap" fxLayoutAlign="center center" fxFlex="98" style="margin-top: 20px">
-
-        <div fxLayout="row wrap" fxLayoutAlign="start center" fxFlex="60" class="font" >
-            <mat-card-title>Hamburguesa Doble</mat-card-title>
-            <mat-card-subtitle >Tomate-lechuga-queso</mat-card-subtitle>
-            <p class="font"> <b>$ 934 </b></p>
-        </div>
-
-        <div fxLayout="row wrap" fxLayoutAlign="center center" fxFlex="40">
-            <div fxLayout="row wrap" fxLayoutAlign="end center" fxFlex="100">
-                <mat-dialog-actions >
-                    <mat-icon  mat-button mat-dialog-close style="cursor: pointer; transform: scale(1.1);">close</mat-icon>
-                </mat-dialog-actions>
+ <!-- fries -->
+    <mat-card fxLayout="row wrap" fxLayoutAlign="center center" fxFlex="98" style="margin-top: 40px">
+        
+        <div fxLayout="row wrap" fxLayoutAlign="center center" fxFlex="60" class="font">
+            <mat-card-title fxFlex="100" >Papas Fritas </mat-card-title>
+            <mat-card-subtitle fxFlex="100">Medianas</mat-card-subtitle>
+            
+            <div fxLayout="row wrap" fxLayoutAlign="center center" fxFlex="100" class="font" >
+                
+                <!-- counter -->
+                <div fxLayout="row wrap" fxLayoutAlign="space-around center" fxFlex="40"  class="incrementer">
+                    
+                    <div fxLayout="row wrap" fxLayoutAlign="center center" fxFlex="10" (click)="decrement()" >
+                        <i class="material-symbols-outlined">remove</i>
+                    </div>
+                    
+                    <div fxLayout="row wrap" fxLayoutAlign="center center" fxFlex="10">
+                        <mat-label style="font-size: 4vw;">{{value}}</mat-label>
+                    </div>
+                    
+                    <div fxLayout="row wrap" fxLayoutAlign="center center" fxFlex="10" (click)="increment()">
+                        <i class="material-symbols-outlined">add</i>
+                    </div>
+                    
+                </div>
+                <!-- end counter -->
+                
+                <div fxLayout="row wrap" fxLayoutAlign="center center" fxFlex="60">
+                    <span class="font" > <b>$ 264 </b></span>
+                </div>
             </div>
-            <img src="assets/food1.png" alt="" fxFlex="70">
+            
         </div>
-    </mat-card>
-
-    <mat-card fxLayout="row wrap" fxLayoutAlign="center center" fxFlex="98" style="margin-top: 20px">
-
-        <div fxLayout="row wrap" fxLayoutAlign="start center" fxFlex="60" class="font" >
-            <mat-card-title>Extra Papas Medianas </mat-card-title>
-            <mat-card-subtitle >Tomate-lechuga-queso</mat-card-subtitle>
-            <p class="font"> <b>$ 264 </b></p>
-        </div>
+        
+        
 
         <div fxLayout="row wrap" fxLayoutAlign="center center" fxFlex="40">
             <div fxLayout="row wrap" fxLayoutAlign="end center" fxFlex="100">
@@ -59,15 +108,14 @@
             <img src="assets/fries.png" alt="" fxFlex="70">
         </div>
     </mat-card>
-
-    <mat-card fxLayout="row wrap" fxLayoutAlign="space-between center" fxFlex="98" style="margin-top: 20px; margin-bottom: 20px;">
-
+<!-- end fries -->
+    
+    <mat-card fxLayout="row wrap" fxLayoutAlign="space-between center" fxFlex="98" style="margin-top: 20px;">
+        
         <div fxLayout="row wrap" fxLayoutAlign="start center" fxFlex="60" class="font" >
             <p class="font" fxFlex="100"> Total Items</p>
             <p class="font" fxFlex="100"> Delivery</p>
             <p class="font"><b>Costo Total</b></p>
-
-
         </div>
 
         <div fxLayout="row wrap" fxLayoutAlign="center center" fxFlex="40">
@@ -78,7 +126,7 @@
         </div>
     </mat-card>
 
-    <button mat-raised-button fxFlex="100" class="font" style=" font-size: 5vw; border-radius: 4px; line-height: 2.5em; background-color: red; color: white; margin-top: 40px; margin-bottom: 20px;" >Pagar
+    <button mat-raised-button fxFlex="97" class="btnFilled fs-5" style=" margin-top: 25px; margin-bottom: 20px;" routerLink="../success" >Pagar
      </button>
 
 </div>        

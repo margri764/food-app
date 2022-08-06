@@ -1,4 +1,9 @@
 
+.font{
+    font-family:'poppins-light';
+    font-size: 5vw;
+  }
+  
 
 .material-symbols-outlined{
     transform: scale(2);
@@ -39,7 +44,6 @@
 
 mat-form-field.mat-form-field{
     font-size: 4vw;
-    font-family: 'awesome';
 }
 
 
@@ -47,7 +51,6 @@ mat-form-field.mat-form-field{
 
 
 .fontTitles{
-    font-family: 'awesome';
     font-size: 3vw;
     color: whitesmoke;
 }
@@ -66,8 +69,6 @@ mat-form-field.mat-form-field{
 
 .btnLink{
     color: rgb(225, 51, 25);
-    font-family: 'awesome';
-    // border-color: white;
     font-size: 1.3vw;
     border: 1px solid whitesmoke;
     background-color: transparent;
@@ -192,11 +193,7 @@ mat-form-field.mat-form-field{
 
     
 
-    .font{
-        color: rgba(0, 0, 0, 0.338);
-        font-size: 4vw;
-       
-   }
+   
 }
 
 @media only screen and (min-width: 576px) {

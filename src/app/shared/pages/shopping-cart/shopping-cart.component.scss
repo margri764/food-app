@@ -1,11 +1,22 @@
 
 
-.font{
-    font-family: 'poppins-light'; 
-    font-size: 5vw;
-}
+
 .mat-card{
-    box-shadow: -1px 4px 14px -2px rgba(0,0,0,0.75);
-    -webkit-box-shadow: -1px 4px 14px -2px rgba(0,0,0,0.75);
-    -moz-box-shadow: -1px 4px 14px -2px rgba(0,0,0,0.75);
+    box-shadow: -1px 4px 14px -2px rgba(179, 179, 179, 0.75);
+    -webkit-box-shadow: -1px 4px 14px -2px rgba(179, 179, 179,0.75);
+    -moz-box-shadow: -1px 4px 14px -2px rgba(179, 179, 179,0.75);
+}
+
+.incrementer{
+    border: 1px solid;
+    border-radius: 5px ;
+
+    box-shadow: -1px 4px 14px -2px rgba(179, 179, 179, 0.55);
+    -webkit-box-shadow: -1px 4px 14px -2px rgba(179, 179, 179,0.55);
+    -moz-box-shadow: -1px 4px 14px -2px rgba(179, 179, 179,0.55);
+}
+
+.btnFilled{
+    line-height: 2.3em;
+    border-radius: 4px;
 }

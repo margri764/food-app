@@ -1,29 +1,43 @@
 /* You can add global styles to this file, and also import other style files */
 
 html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+body { margin: 0; font-family: "Helvetica Neue", sans-serif; }
 
 
 @font-face {
     font-family:'awesome';
-    src: url(/assets/font/fontawesome-webfont.ttf);
+    src: url(assets/font/fontawesome-webfont.ttf);
      
 }
 
 @font-face {
   font-family:'poppins-light';
-  src: url(/assets/font/poppins/Poppins-Light.ttf);
+  src: url(assets/font/poppins/Poppins-Light.ttf);
    
 }
 
-  @font-face{
-    font-family: 'Open Sans', sans-serif;
-    src: url(https://fonts.googleapis.com/css2?family=Open+Sans&display=swap);
+.font{
+  font-family:'poppins-light';
+}
+
+.fs-4{
+  font-size: 4vw;
+}
+.fs-5{
+  font-size: 5vw;
+}
+.fs-6{
+  font-size: 6vw;
 }
 
 
+.btnFilled{
+  font-family:'poppins-light';
+  background-color: red;
+  color: white;
+}
 
-  .material-icons-outlined {
+.material-icons-outlined {
     font-size: 28px;
     color: rgba(0, 0, 0, 0.349);
     cursor: pointer;
@@ -32,11 +46,11 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 .material-icons-outlined:hover {
     color: rgb(0, 0, 0);
 
-    .font{
-        color: rgb(0, 0, 0);
-        background-color: #eaafaf;
+    // .font{
+    //     color: rgb(0, 0, 0);
+    //     background-color: #eaafaf;
         
-    }
+    // }
 
 
 }

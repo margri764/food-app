@@ -20,6 +20,7 @@ import { OfferComponent } from './shared/pages/offer/offer.component';
 import { MessageComponent } from './shared/pages/message/message.component';
 import { PopusComponent } from './shared/pages/popus/popus.component';
 import { StartComponent } from './shared/pages/start/start.component';
+import { OrderComponent } from './shared/pages/order/order.component';
 
 @NgModule({
   declarations: [
@@ -37,7 +38,8 @@ import { StartComponent } from './shared/pages/start/start.component';
     LocationComponent,
     SuccessComponent,
     HamburgerComponent,
-    ShoppingCartComponent
+    ShoppingCartComponent,
+    OrderComponent
   ],
   imports: [
     BrowserModule,

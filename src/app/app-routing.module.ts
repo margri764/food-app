@@ -6,6 +6,7 @@ import { DeliveryComponent } from './shared/pages/delivery/delivery.component';
 import { HamburgerComponent } from './shared/pages/hamburger/hamburger.component';
 import { HomeComponent } from './shared/pages/home/home.component';
 import { OfferComponent } from './shared/pages/offer/offer.component';
+import { OrderComponent } from './shared/pages/order/order.component';
 import { ShoppingCartComponent } from './shared/pages/shopping-cart/shopping-cart.component';
 import { StartComponent } from './shared/pages/start/start.component';
 import { SuccessComponent } from './shared/pages/success/success.component';
@@ -14,6 +15,9 @@ const routes: Routes = [
   
   {
     path: 'start', component: StartComponent
+  },
+  {
+    path: 'order', component: OrderComponent
   },
   {
     path: 'cart', component: ShoppingCartComponent
