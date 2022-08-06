@@ -52,7 +52,8 @@ import {MatBottomSheetModule} from '@angular/material/bottom-sheet';
     MatSlideToggleModule,
     MatExpansionModule,
     MatTooltipModule,
-    MatBottomSheetModule
+    MatBottomSheetModule,
+    MatSlideToggleModule
 
   ]
 })

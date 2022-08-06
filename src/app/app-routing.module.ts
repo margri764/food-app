@@ -7,6 +7,8 @@ import { HamburgerComponent } from './shared/pages/hamburger/hamburger.component
 import { HomeComponent } from './shared/pages/home/home.component';
 import { OfferComponent } from './shared/pages/offer/offer.component';
 import { OrderComponent } from './shared/pages/order/order.component';
+import { ProfileComponent } from './shared/pages/profile/profile.component';
+import { SettingsComponent } from './shared/pages/settings/settings.component';
 import { ShoppingCartComponent } from './shared/pages/shopping-cart/shopping-cart.component';
 import { StartComponent } from './shared/pages/start/start.component';
 import { SuccessComponent } from './shared/pages/success/success.component';
@@ -15,6 +17,12 @@ const routes: Routes = [
   
   {
     path: 'start', component: StartComponent
+  },
+  {
+    path: 'profile', component: ProfileComponent
+  },
+  {
+    path: 'settings', component: SettingsComponent
   },
   {
     path: 'order', component: OrderComponent

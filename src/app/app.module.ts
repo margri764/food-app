@@ -22,6 +22,9 @@ import { PopusComponent } from './shared/pages/popus/popus.component';
 import { StartComponent } from './shared/pages/start/start.component';
 import { OrderComponent } from './shared/pages/order/order.component';
 import { MoreComponent } from './shared/pages/more/more.component';
+import { ProfileComponent } from './shared/pages/profile/profile.component';
+import { SettingsComponent } from './shared/pages/settings/settings.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -41,14 +44,19 @@ import { MoreComponent } from './shared/pages/more/more.component';
     HamburgerComponent,
     ShoppingCartComponent,
     OrderComponent,
-    MoreComponent
+    MoreComponent,
+    ProfileComponent,
+    SettingsComponent
+
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
     MaterialModule,
-    FlexLayoutModule
+    FlexLayoutModule,
+    ReactiveFormsModule
+
   ],
   providers: [],
   bootstrap: [AppComponent]
