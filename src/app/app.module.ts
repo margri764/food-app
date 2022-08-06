@@ -21,6 +21,7 @@ import { MessageComponent } from './shared/pages/message/message.component';
 import { PopusComponent } from './shared/pages/popus/popus.component';
 import { StartComponent } from './shared/pages/start/start.component';
 import { OrderComponent } from './shared/pages/order/order.component';
+import { MoreComponent } from './shared/pages/more/more.component';
 
 @NgModule({
   declarations: [
@@ -39,7 +40,8 @@ import { OrderComponent } from './shared/pages/order/order.component';
     SuccessComponent,
     HamburgerComponent,
     ShoppingCartComponent,
-    OrderComponent
+    OrderComponent,
+    MoreComponent
   ],
   imports: [
     BrowserModule,

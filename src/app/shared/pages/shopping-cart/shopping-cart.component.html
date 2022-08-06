@@ -2,25 +2,31 @@
 
 
 
-<div fxLayout="row wrap" fxLayoutAlign="center center" fxFlex="100" >
+<div fxLayout="row wrap" fxLayoutAlign="center space-between" style="height: 100%;" >
 
-        <div fxLayout="row wrap"  fxLayoutAlign="center center" fxFlex="100" style="margin-top: 25px; margin-left: 25px;">
+<div fxLayout="row wrap" fxLayoutAlign="center start" fxFlex="100" >
 
-            <div fxLayout="row wrap" fxLayoutAlign="start center" fxFlex="20" >
-                <button mat-mini-fab  aria-label="Example icon button with a delete icon" style="transform: scale(0.9);" routerLink="../home">
-                    <mat-icon>arrow_back_ios_new</mat-icon>
-                </button>
-            </div>
+    <div fxLayout="row wrap"  fxLayoutAlign="center start" fxFlex="100" style="margin-top: 25px; margin-left: 25px;">
 
-            <div fxLayout="row wrap" fxLayoutAlign="start center" fxFlex="80" >
-                <span class="font" style="font-size:6vw;" >Tu orden</span>
-            </div>  
+        <div fxLayout="row wrap" fxLayoutAlign="start center" fxFlex="20" >
+            <button mat-mini-fab  aria-label="Example icon button with a delete icon" style="transform: scale(0.9);" routerLink="../home">
+                <mat-icon>arrow_back_ios_new</mat-icon>
+            </button>
         </div>
 
+        <div fxLayout="row wrap" fxLayoutAlign="start center" fxFlex="80" >
+            <span class="font fs-6">Tu orden</span>
+        </div>  
+    </div>
 
-    <mat-card fxLayout="row wrap" fxLayoutAlign="center center" fxFlex="98" style="margin-top: 40px">
+ 
 
-        <div fxLayout="row wrap" fxLayoutAlign="center center" fxFlex="60" class="font">
+    <div fxLayout="row wrap" fxLayoutAlign="center center" fxFlex="100" >
+
+
+    <mat-card fxLayout="row wrap" fxLayoutAlign="center center" fxFlex="98" style="margin-top: 30px">
+
+        <div fxLayout="row wrap" fxLayoutAlign="center center" fxFlex="60" class="font fs-5">
             <mat-card-title fxFlex="100" >Hamburguesa Simple </mat-card-title>
             <mat-card-subtitle fxFlex="100">Tomate-lechuga-queso</mat-card-subtitle>
       
@@ -109,6 +115,7 @@
         </div>
     </mat-card>
 <!-- end fries -->
+
     
     <mat-card fxLayout="row wrap" fxLayoutAlign="space-between center" fxFlex="98" style="margin-top: 20px;">
         
@@ -125,9 +132,18 @@
 
         </div>
     </mat-card>
+    </div>
+</div>   
 
-    <button mat-raised-button fxFlex="97" class="btnFilled fs-5" style=" margin-top: 25px; margin-bottom: 20px;" routerLink="../success" >Pagar
-     </button>
+<!-- button PAGAR -->
+<div fxLayout="row wrap" fxLayoutAlign="center center" fxFlex="100" >
+
+    <button mat-raised-button fxFlex="97" class="btnFilled fs-5" style=" margin-top: 25px; margin-bottom: 15px; " routerLink="../success" >Pagar
+    </button>
+</div>
+<!-- END button PAGAR -->
+
+
 
 </div>        
 

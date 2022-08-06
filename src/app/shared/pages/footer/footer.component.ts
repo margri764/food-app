@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { MatBottomSheet } from '@angular/material/bottom-sheet';
 import { HeaderComponent } from '../header/header.component';
+import { MoreComponent } from '../more/more.component';
 
 @Component({
   selector: 'app-footer',
@@ -17,7 +18,7 @@ export class FooterComponent implements OnInit {
   }
 
   openBottomSheet() {
-    this._bottomSheet.open(HeaderComponent);
+    this._bottomSheet.open(MoreComponent);
   }
 
 }
