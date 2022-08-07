@@ -60,17 +60,7 @@ body { margin: 0; font-family: "Helvetica Neue", sans-serif; }
     cursor: pointer;
 
 }
-.material-icons-outlined:hover {
-    color: rgb(0, 0, 0);
 
-    // .font{
-    //     color: rgb(0, 0, 0);
-    //     background-color: #eaafaf;
-        
-    // }
-
-
-}
 
 .material-symbols-outlined {
     font-variation-settings:
@@ -80,8 +70,7 @@ body { margin: 0; font-family: "Helvetica Neue", sans-serif; }
     'opsz' 48
   }
 
-// .mat-dialog-container {
-// }
+
 
 
 .custom-modalbox {
@@ -96,6 +85,3 @@ body { margin: 0; font-family: "Helvetica Neue", sans-serif; }
     }
 }
 
-// ::ng-deep .custom-modalbox {
-//   width: 10%;
-// }

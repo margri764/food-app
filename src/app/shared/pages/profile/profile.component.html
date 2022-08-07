@@ -5,15 +5,14 @@
   <div fxLayout="row wrap" fxLayoutAlign="center center"  fxFlex="100">
 
     <!-- profile header -->
-    <div fxLayout="row wrap" fxLayoutAlign="center center"  fxFlex="100">
-        <div fxLayout="row wrap" fxLayoutAlign="center center" class="title" fxFlex="50">
-            <span class="font fs-6">Tu perfil</span>
-        </div>
+    <div fxLayout="row wrap" fxLayoutAlign="start center"  fxFlex="88" class="mt-40">
+            <span class="font fs-6"><b> Editar perfil</b></span>
+            <!-- <span class="font fs-6"><b> Listo</b></span> -->
     </div>
     <!-- end profile header -->
 
 
-    <form  [formGroup]="myForm"  fxLayout="row wrap" fxLayoutAlign="center center" fxFlex="100"  style="margin-top: 50px">     
+    <form  [formGroup]="myForm"  fxLayout="row wrap" fxLayoutAlign="center center" fxFlex="100"  style="margin-top: 35px">     
 
         <mat-form-field appearance="legacy" fxFlex="85" class="mt-20 font fs-5"> 
             <mat-label class="font fs-5">Nombre</mat-label>

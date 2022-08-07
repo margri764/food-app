@@ -25,6 +25,9 @@ import { MoreComponent } from './shared/pages/more/more.component';
 import { ProfileComponent } from './shared/pages/profile/profile.component';
 import { SettingsComponent } from './shared/pages/settings/settings.component';
 import { ReactiveFormsModule } from '@angular/forms';
+import { BannerRegisterComponent } from './shared/pages/banner-register/banner-register.component';
+import { LoginComponent } from './shared/pages/login/login.component';
+import { RegisterComponent } from './shared/pages/register/register.component';
 
 @NgModule({
   declarations: [
@@ -46,7 +49,10 @@ import { ReactiveFormsModule } from '@angular/forms';
     OrderComponent,
     MoreComponent,
     ProfileComponent,
-    SettingsComponent
+    SettingsComponent,
+    BannerRegisterComponent,
+    LoginComponent,
+    RegisterComponent
 
   ],
   imports: [

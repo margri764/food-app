@@ -27,12 +27,17 @@ export class MoreComponent implements OnInit {
       break;
 
       case 'settings':
-                     setTimeout(()=>{ this.router.navigateByUrl('settings')},1)
+                    setTimeout(()=>{ this.router.navigateByUrl('settings')},1)
+                    this._bottomSheet.ngOnDestroy();
+      break;
+
+      case 'order':
+                    setTimeout(()=>{ this.router.navigateByUrl('order')},1)
                     this._bottomSheet.ngOnDestroy();
       break; 
 
       case 'close':
-                     this._bottomSheet.ngOnDestroy();
+                    this._bottomSheet.ngOnDestroy();
         break; 
 
       default: this.router.navigateByUrl('')

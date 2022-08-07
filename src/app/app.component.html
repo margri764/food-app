@@ -8,7 +8,8 @@
 
             <div class="sticky-header">
           
-              <app-header *ngIf="!(router.url === '/home' || router.url === '/start' || router.url === '/cart')"></app-header>
+              <app-header *ngIf="!(router.url === '/home' || router.url === '/start' || router.url === '/cart' || router.url === '/profile'
+              || router.url === '/register')"></app-header>
             
             </div>
             <div class="content-wrapper">
@@ -17,18 +18,18 @@
            
       
       
-                
-              
-                 <router-outlet> </router-outlet> 
-              
-               
-      
-               
+                <div fxLayout="row wrap" fxLayoutAlign="center center">
+                 <app-banner-register *ngIf="!(router.url === '/profile' || router.url === '/register'&& login)" style="width:90vw ;"></app-banner-register>
                 </div>
-      
+                 <router-outlet> </router-outlet> 
+                 
+                 
+                </div>
+                
               </div> 
               <div class="sticky-header">
-              <app-footer *ngIf="!(router.url === '/start')"></app-footer>
+
+                <app-footer *ngIf="!(router.url === '/start' || router.url === '/register')"></app-footer>
 
               </div> 
             </div>
