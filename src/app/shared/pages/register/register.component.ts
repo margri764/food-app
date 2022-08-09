@@ -30,23 +30,20 @@ export class RegisterComponent implements OnInit {
   
   ngOnInit() {
       this.myForm = this.fb.group({
-        name:     [ '' ],
-        lastName: [ '' ],
+        fullName: [ '' ],
         email:    [ '' ],
-        phone:    [ '' ],
-        birthday: [ '' ],
-        address:  [ '' ],
-        // monto: ['', Validators.required ],
+        password: [ '' ],
+        confirm:  [ '' ],
       });
 
-      this.openDialog();
+      // this.openDialog();
   }
 
-  openDialog() {
-    this.dialog.open(GoogleRegisterComponent, {
-     height: '400px',
-     panelClass:"custom-google-register",
-   });
-  }
+  // openDialog() {
+  //   this.dialog.open(GoogleRegisterComponent, {
+  //   //  height: '400px',
+  //    panelClass:"custom-google-register",
+  //  });
+  // }
   
   }

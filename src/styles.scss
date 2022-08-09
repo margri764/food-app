@@ -20,14 +20,17 @@ body { margin: 0; font-family: "Helvetica Neue", sans-serif; }
   font-family:'poppins-light';
 }
 
+.fs-3{
+  font-size: 1em;
+}
 .fs-4{
-  font-size: 4vw;
+  font-size: 1.2em;
 }
 .fs-5{
-  font-size: 5vw;
+  font-size: 1.3em;
 }
 .fs-6{
-  font-size: 6vw;
+  font-size: 2em;
 }
 
 .f-w{
@@ -48,9 +51,12 @@ body { margin: 0; font-family: "Helvetica Neue", sans-serif; }
   margin-top: 15px;
 }
 
-
 .mt-20{
   margin-top: 20px;
+}
+
+.mt-25{
+  margin-top: 25px;
 }
 
 .mt-30{

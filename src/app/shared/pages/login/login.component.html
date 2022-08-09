@@ -1,1 +1,80 @@
-<p>login works!</p>
+
+
+<div fxLayout="row wrap" fxLayoutAlign="center space-between" class="backLogin">
+  
+    <div fxLayout="row wrap" fxLayoutAlign="center center" fxFlex="100">
+      
+        <div fxLayout="row wrap" fxLayoutAlign="center center" class="mt-40" fxFlex="100">
+            <span class="font fs-5" ><b> Que bueno verte de nuevo!! </b> </span> &nbsp;
+            <i class="material-icons f-w" >favorite</i>
+        </div>
+
+        <img src="assets/logo-header.png" alt="" fxFlex="40" class="mt-40">
+
+        
+        
+        <form  [formGroup]="myForm"  fxLayout="row wrap" fxLayoutAlign="center center" fxFlex="100"  style="margin-top: 30px;">     
+            
+            <!-- <div fxLayout="row wrap" fxLayoutAlign="start center"  fxFlex="90">
+                <span class="font fs-5" > Registro completo...</span>
+            </div>
+        -->
+        
+          
+          <mat-form-field appearance="outline" fxFlex="85" class="mt-10 font fs-5" >		
+              <mat-label>Email</mat-label>
+              <input matInput type="email" required formControlName="email">
+            </mat-form-field> 
+            
+            
+            <mat-form-field appearance="outline" fxFlex="85" class="mt-10 font fs-5">		
+                <mat-label>Password</mat-label>
+                <input matInput type="password" required formControlName="password">
+            </mat-form-field> 
+            <!-- <mat-error  *ngIf ="validField ('phone')">
+                completa este dato
+            </mat-error>  -->
+            <div fxLayout="row wrap" fxLayoutAlign="end center"  fxFlex="98">
+                <span class="font fs-3" style="margin-right:30px;" ><b> ¿Olvidaste tu contraseña?</b> </span>
+            </div>
+            
+        </form>
+
+        <div fxLayout="row wrap" fxLayoutAlign="center center" class="btnLogin mt-40" fxFlex="85">
+            <span class="font fs-5">Ingresar</span>
+        </div>
+        
+        <div fxLayout="row wrap" fxLayoutAlign="center center" class="mt-40" fxFlex="82">
+            <div class="line" fxFlex="24"></div>
+            <span class="font fs-4" fxFlex="45" fxLayoutAlign="center center">sino ingresa con...</span>
+            <div class="line" fxFlex="24"></div>
+        </div>
+
+        <div fxLayout="row wrap" fxLayoutAlign="center center" class="btnGoogle mt-20" fxFlex="85" >
+            <img src="assets/google.png" alt="" fxFlex="10">
+            <span class="font fs-5">oogle</span>
+        </div>
+
+
+    </div>
+
+
+    
+    <!-- save button -->
+    <div fxLayout="row wrap" fxLayoutAlign="center center"  fxFlex="100" style="margin-bottom: 20px;">
+    
+    <div  fxLayout="row wrap"  fxLayoutAlign="start" fxFlex="95"  style="margin-top: 15px" >
+      <p class="font fs-4"> ¿No tenes una cuenta?<b style="color: red; cursor: pointer;" routerLink="../register" > &nbsp; Ingresa acá</b></p>
+    </div>    
+  
+    
+   
+  </div>
+  <!-- end save button -->
+  
+  </div>
+  
+  
+  
+  
+  

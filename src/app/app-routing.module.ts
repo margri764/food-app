@@ -5,6 +5,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { DeliveryComponent } from './shared/pages/delivery/delivery.component';
 import { HamburgerComponent } from './shared/pages/hamburger/hamburger.component';
 import { HomeComponent } from './shared/pages/home/home.component';
+import { LoginComponent } from './shared/pages/login/login.component';
 import { OfferComponent } from './shared/pages/offer/offer.component';
 import { OrderComponent } from './shared/pages/order/order.component';
 import { ProfileComponent } from './shared/pages/profile/profile.component';
@@ -16,8 +17,12 @@ import { SuccessComponent } from './shared/pages/success/success.component';
 
 const routes: Routes = [
   
+  
   {
     path: 'register', component: RegisterComponent
+  },
+  {
+    path: 'login', component: LoginComponent
   },
   {
     path: 'start', component: StartComponent
