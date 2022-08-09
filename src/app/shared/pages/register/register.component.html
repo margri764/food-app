@@ -1,40 +1,72 @@
 
-<div fxLayout="row wrap" fxLayoutAlign="center center" class="backLogin">
-   
-    <form  [formGroup]="myForm"  fxLayout="row wrap" fxLayoutAlign="center center" fxFlex="100"  style="margin-top: 35px">     
 
-        <mat-form-field appearance="outline" fxFlex="85" class="mt-20 font fs-5"> 
-            <mat-label class="font fs-5">Nombre</mat-label>
-            <input matInput type="text" required formControlName="name">
-        </mat-form-field> 
- 
-        <mat-form-field appearance="outline" fxFlex="85" class="mt-20 font fs-5"> 
-            <mat-label  >Apellido</mat-label>
+<div fxLayout="row wrap" fxLayoutAlign="center space-between" class="backLogin">
+  
+  <div fxLayout="row wrap" fxLayoutAlign="center center" fxFlex="100">
+    
+    <span class="font fs-5 mt-20 f-w" > Registrarse con google</span>
+    
+<!-- google -->
+ <div fxLayout="row wrap" fxLayoutAlign="center center"  fxFlex="100" style="margin-top: 15px;">
+    <div fxLayout="row wrap" fxLayoutAlign="center center" class="btnSave" fxFlex="40" >
+      <img src="assets/google.png" alt="" fxFlex="20">
+      <span class="font fs-5">oogle</span>
+    </div>
+  </div>
+  <!--end  google -->
+  
+  
+  <form  [formGroup]="myForm"  fxLayout="row wrap" fxLayoutAlign="center center" fxFlex="100"  style="margin-top: 10px">     
+    
+    <mat-form-field appearance="outline" fxFlex="85" class="mt-10 font fs-5"> 
+      <mat-label>Nombre</mat-label>
+      <input matInput type="text" required formControlName="name">
+    </mat-form-field> 
+    
+    <mat-form-field appearance="outline" fxFlex="85" class="mt-10 font fs-5"> 
+      <mat-label>Apellido</mat-label>
             <input matInput type="text" required formControlName="lastName">
         </mat-form-field> 
-  
-        <mat-form-field appearance="outline" fxFlex="85" class="mt-20 font fs-5" >		
-            <mat-label  >Email</mat-label>
-            <input matInput type="email" required formControlName="email">
+        
+        <mat-form-field appearance="outline" fxFlex="85" class="mt-10 font fs-5" >		
+          <mat-label>Email</mat-label>
+          <input matInput type="email" required formControlName="email">
         </mat-form-field> 
   
   
-          <mat-form-field appearance="outline" fxFlex="85" class="mt-20 font fs-5">		
+          <mat-form-field appearance="outline" fxFlex="85" class="mt-10 font fs-5">		
             <mat-label>Telefono</mat-label>
             <input matInput type="number" required formControlName="phone">
-        </mat-form-field> 
-        <!-- <mat-error  *ngIf ="validField ('phone')">
-          completa este dato
+          </mat-form-field> 
+          <!-- <mat-error  *ngIf ="validField ('phone')">
+            completa este dato
           </mat-error>  -->
-
-          <mat-form-field appearance="outline" fxFlex="85" class="mt-20 font fs-5">		
+          
+          <mat-form-field appearance="outline" fxFlex="85" class="mt-10 font fs-5">		
             <mat-label >Dirección</mat-label>
             <input matInput type="text" required formControlName="address">
-        </mat-form-field> 
-       
-      </form>
+          </mat-form-field> 
+          
+        </form>
+</div>
 
+<!-- save button -->
+<div fxLayout="row wrap" fxLayoutAlign="center center"  fxFlex="100" style="margin-bottom: 20px;">
+  
+  <div  fxLayout="row wrap"  fxLayoutAlign="start" fxFlex="95"  style="margin-top: 15px" >
+    <p class="font fs-4"> <b style="color: red; cursor: pointer;" >ya tengo una cuenta!</b></p>
+  </div>    
+
+  
+  <div fxLayout="row wrap" fxLayoutAlign="center center" class="btnSave" fxFlex="50" (click)="onSaveForm()">
+    <span class="font fs-5">Registrarse</span>
+  </div>
+  
+</div>
+<!-- end save button -->
 
 </div>
+
+
 
 

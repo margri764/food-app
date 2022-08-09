@@ -28,6 +28,7 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { BannerRegisterComponent } from './shared/pages/banner-register/banner-register.component';
 import { LoginComponent } from './shared/pages/login/login.component';
 import { RegisterComponent } from './shared/pages/register/register.component';
+import { GoogleRegisterComponent } from './shared/pages/messages/google-register/google-register.component';
 
 @NgModule({
   declarations: [
@@ -52,7 +53,8 @@ import { RegisterComponent } from './shared/pages/register/register.component';
     SettingsComponent,
     BannerRegisterComponent,
     LoginComponent,
-    RegisterComponent
+    RegisterComponent,
+    GoogleRegisterComponent
 
   ],
   imports: [

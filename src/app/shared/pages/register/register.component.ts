@@ -1,7 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup } from '@angular/forms';
+import { MatDialog } from '@angular/material/dialog';
 import { Router } from '@angular/router';
 import { AuthService } from 'src/app/services/auth/auth.service';
+import { GoogleRegisterComponent } from '../messages/google-register/google-register.component';
 
 @Component({
   selector: 'app-register',
@@ -15,7 +17,9 @@ export class RegisterComponent implements OnInit {
   
     constructor( private fb: FormBuilder,
                  private authservice : AuthService,
-                 private router: Router
+                 private router: Router,
+                 private dialog : MatDialog
+
                  ) { }
   
   
@@ -34,6 +38,15 @@ export class RegisterComponent implements OnInit {
         address:  [ '' ],
         // monto: ['', Validators.required ],
       });
+
+      this.openDialog();
+  }
+
+  openDialog() {
+    this.dialog.open(GoogleRegisterComponent, {
+     height: '400px',
+     panelClass:"custom-google-register",
+   });
   }
   
   }
