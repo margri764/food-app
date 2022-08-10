@@ -1,7 +1,9 @@
 import { Component, OnInit } from '@angular/core';
+import { MatBottomSheet } from '@angular/material/bottom-sheet';
 import { MatDialog } from '@angular/material/dialog';
 import { Router } from '@angular/router';
 import { AuthService } from './services/auth/auth.service';
+import { LocationComponent } from './shared/messages/location/location/location.component';
 import { PopusComponent } from './shared/pages/popus/popus.component';
 
 @Component({
@@ -16,19 +18,24 @@ export class AppComponent implements OnInit{
   
   login:boolean=true;
   // en el oninit iria un servicio para cambiar el estado del login!!!!
-
+  
   constructor( 
-              public router: Router,
-              private dialog : MatDialog,
-              private authservice : AuthService
-              ) {
+               public router: Router,
+               private dialog : MatDialog,
+               private authservice : AuthService,
+               private _bottomSheet: MatBottomSheet,
+    ) {
     
   }
   
   ngOnInit(): void {
     
     this.router.navigateByUrl('start');
-    this.changeBannerStatus();
+
+    setTimeout(()=>{
+      this.openDialog();
+
+    },10000)
   }
   
   changeBannerStatus(){
@@ -38,9 +45,18 @@ export class AppComponent implements OnInit{
 
   openDialog() {
     this.dialog.open(PopusComponent, {
-     height: '400px',
      panelClass:"custom-modalbox",
    });
   }
 
-}
+
+
+}  
+
+
+
+
+
+
+
+

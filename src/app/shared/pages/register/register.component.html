@@ -6,10 +6,12 @@
   
   <div fxLayout="row wrap" fxLayoutAlign="center center" fxFlex="100">
     
-      <!-- <div fxLayout="row wrap" fxLayoutAlign="center center" class="mt-20" fxFlex="100">
-          <span class="font fs-5" ><b> Que bueno verte!! </b> </span> &nbsp;
-          <i class="material-icons f-w" >favorite</i>
-      </div> -->
+
+          <div fxLayout="row wrap"   fxLayoutAlign="start center" fxFlex="100" class="mt-10" style="margin-left:10px;">
+            <button mat-mini-fab  aria-label="Example icon button with a delete icon" routerLink="../home">
+                <mat-icon>arrow_back_ios_new</mat-icon>
+              </button>
+          </div>  
 
       <img src="assets/logo-header.png" alt="" fxFlex="33" class="mt-10">
 
@@ -38,7 +40,7 @@
           </mat-error>  -->
 
           <mat-form-field appearance="outline" fxFlex="85" class="mt-10 font fs-5">		
-            <mat-label>Confrimar Contraseña</mat-label>
+            <mat-label>Confirmar Contraseña</mat-label>
             <input matInput type="password" required formControlName="confirm">
         </mat-form-field> 
         <!-- <mat-error  *ngIf ="validField ('phone')">
@@ -52,14 +54,15 @@
       </div>
       
       <div fxLayout="row wrap" fxLayoutAlign="center center" class="mt-40" fxFlex="80">
-        <div class="line" fxFlex="35"></div>
-        <span class="font fs-4" fxFlex="20" fxLayoutAlign="center center">o</span>
-        <div class="line" fxFlex="35"></div>
+        <div class="line" fxFlex="30"></div>
+        <span class="font fs-4" fxFlex="20" fxLayoutAlign="center center">O</span>
+        <div class="line" fxFlex="30"></div>
     </div>
 
-      <div fxLayout="row wrap" fxLayoutAlign="center center" class="btnGoogle mt-20" fxFlex="75" >
-          <img src="assets/google.png" alt="" fxFlex="10">
-          <span class="font fs-5">oogle</span>
+      <div fxLayout="row wrap" fxLayoutAlign="center center" class="btnGoogle mt-20 font fs-5" fxFlex="75" >
+        <span>Continue con &nbsp;</span>  <img src="assets/google.png" alt="" fxFlex="10"><span >oogle</span>
+          <!-- <img src="assets/google.png" alt="" fxFlex="10">
+          <span class="font fs-5">oogle</span> -->
       </div>
 
 
