@@ -1,22 +1,22 @@
-<div  fxLayout="row wrap"  fxLayoutAlign="space-between" style="height: 80px; border-top: 1px solid red;"  >
+<div  fxLayout="row wrap"  fxLayoutAlign="space-between" class="footer">
 
-    <div class="icon" fxLayout="row wrap"  fxLayoutAlign="center center" fxFlex="20" style="margin-bottom: 5px; ">
-        <i routerLink="../home" class="material-symbols-outlined" fxLayoutAlign="center center" fxFlex="100">home</i> 
+    <div class="icon" fxLayout="row wrap"  fxLayoutAlign="center center" fxFlex="20" style="margin-bottom: 5px;" routerLink="../home">
+        <i  class="material-symbols-outlined" fxLayoutAlign="center center" fxFlex="100">home</i> 
         <span class="font" >Inicio</span>
     </div>  
    
-    <div   fxLayout="row wrap"  fxLayoutAlign="center center" fxFlex="20" style="margin-bottom: 5px" routerLink="../order">
+    <div class="icon" fxLayout="row wrap"  fxLayoutAlign="center center" fxFlex="20" style="margin-bottom: 5px" routerLink="../order">
         <i  class="material-symbols-outlined" fxLayoutAlign="center center" fxFlex="100" >shopping_bag</i> 
         <span class="font" >Pedidos</span>
     </div>    
 
-    <div   fxLayout="row wrap"  fxLayoutAlign="center center" fxFlex="20" style="margin-bottom: 5px">
+    <div class="icon" fxLayout="row wrap"  fxLayoutAlign="center center" fxFlex="20" style="margin-bottom: 5px">
         <i routerLink="../offers" class="material-symbols-outlined" fxLayoutAlign="center center" fxFlex="100">local_offer</i> 
         <span class="font" >Ofertas</span>
     </div>    
 
    
-    <div fxLayout="row wrap"  fxLayoutAlign="center center" fxFlex="20" style="margin-bottom: 5px" (click)="openBottomSheet()">
+    <div class="icon" fxLayout="row wrap"  fxLayoutAlign="center center" fxFlex="20" style="margin-bottom: 5px" (click)="openBottomSheet()">
         <i class="material-symbols-outlined" fxLayoutAlign="center center" fxFlex="100">more_vert</i> 
         <span class="font" >mas</span>
 

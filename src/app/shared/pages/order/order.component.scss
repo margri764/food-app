@@ -1,0 +1,71 @@
+
+
+
+.font{
+    font-family:'poppins-light';
+    font-size: 1.5em;
+}
+
+h1.font{
+    font-size: 3em;
+    font-weight: bold;
+}
+
+
+
+//Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 575px) {
+
+    .font{
+        font-size: 1.1em;
+    }
+
+    h1.font{
+        font-size: 1.4em;
+        font-weight: bold;
+    }
+    
+   
+}
+
+@media only screen and (min-width: 576px) {
+
+}
+    
+
+/* medium devices (tablets, 768 px and up) */ 
+@media only screen and (min-width: 786px) {
+
+}
+    
+
+/* large devices (desktops, 992 px and up) */ 
+@media only screen and (min-width: 992px) {
+
+}
+
+/* x-large devices (desktops, 1200 px and up) */ 
+@media only screen and (min-width: 1200px) {
+    
+    .font{
+        font-size: 1em;
+    }
+
+    h1.font{
+        font-size: 1.6em;
+        font-weight: bold;
+    }
+    
+
+}
+
+
+
+
+@media only screen and (min-width: 1400px) {
+/* XX- Large devices (larger desktops, 1400px and up) */ 
+     
+
+
+}
+    

@@ -1,21 +1,19 @@
 
-.font{
-    font-family:'poppins-light';
-    font-size: 5vw;
-  }
-  
 
 .material-symbols-outlined{
     transform: scale(2);
 }
 
-.icon{
-    border-radius: 35px;
-    border: 2px solid rgb(225, 51, 25);
-    height: 80px;
-    background-color: #e5e5e530;
-
+.font{
+    font-family:'poppins-light';
+    font-size: 1.5em;
 }
+
+h1.font{
+    font-size: 3em;
+    font-weight: bold;
+}
+
 
 .logo-container{
     border-radius: 35px;
@@ -25,9 +23,9 @@
 .logo-header{
     background-color: rgb(220,28,36);
 
-  box-shadow: -1px 4px 14px -2px rgba(0,0,0,0.75);
--webkit-box-shadow: -1px 4px 14px -2px rgba(0,0,0,0.75);
--moz-box-shadow: -1px 4px 14px -2px rgba(0,0,0,0.75);
+    box-shadow: -1px 4px 14px -2px rgba(0,0,0,0.75);
+    -webkit-box-shadow: -1px 4px 14px -2px rgba(0,0,0,0.75);
+    -moz-box-shadow: -1px 4px 14px -2px rgba(0,0,0,0.75);
 
 ::ng-deep .mat-form-field-appearance-outline .mat-form-field-outline {
     color: #61a7e900;
@@ -48,62 +46,25 @@ mat-form-field.mat-form-field{
 }
 // #dc1c24
 
-
-
-
-
-.fontTitles{
-    font-size: 3vw;
-    color: whitesmoke;
-}
-
-.btn{
-    margin-bottom: 20px;
-    // margin-top:10px;
-    opacity: 0.7;
-    width: 50px;
-    height: 50px;
-    
-    box-shadow: 6px 4px 3px -2px rgba(0,0,0,0.9);
--webkit-box-shadow: 6px 4px 43px -2px rgba(0,0,0,0.9);
--moz-box-shadow: 6px 4px 43px -2px rgba(0,0,0,0.9);
-}
-
-.btnLink{
-    color: rgb(225, 51, 25);
-    font-size: 1.3vw;
-    border: 1px solid whitesmoke;
-    background-color: transparent;
-    margin-bottom: 30px;
-    margin-top: 20px;
-    border-radius: 5px;
-    line-height: 2em;
-    cursor: pointer;
-} 
-
-.btnLink:hover{
-    background-color: white;
-    color: black;
-
-}
-
-.logo{
-    box-shadow: 2px 10px 12px 0px rgba(252,204,4,0.19);
--webkit-box-shadow: 2px 10px 12px 0px rgba(252,204,4,0.19);
--moz-box-shadow: 2px 10px 12px 0px rgba(252,204,4,0.19);
-}
-
 .mini-logo{
     cursor: pointer;
+    transform: scale(0.7);
 
     filter: drop-shadow(0px 0px 3px #000000);
     -webkit-filter: drop-shadow(0px 0px 3px #000000);
     -moz-filter: drop-shadow(0px 0px 3px #000000);
 }
 
+.mini-logo:hover{
+filter: drop-shadow(0px 0px 3px #000000);
+    -webkit-filter: drop-shadow(0px 0px 7px #000000);
+    -moz-filter: drop-shadow(0px 0px 3px #000000);
+}
 
-.hamburger{
+
+.menu{
     border-radius: 20px;
+    cursor: pointer;
 
     background: rgba(211,172,8,0.44);
     background: radial-gradient(circle farthest-corner at center center, rgba(211,172,8,0.44) 0%, #fccc04 80%);
@@ -114,18 +75,23 @@ mat-form-field.mat-form-field{
     -webkit-box-shadow: 18px 21px 14px -5px rgba(0,0,0,0.15);
     -moz-box-shadow: 18px 21px 14px -5px rgba(0,0,0,0.15);
 
-    .fontTitles{
-        color: brown;
-        margin-top: 0px;
-        font-weight: 400;
-    }
-    .btnLink{
-        color: brown;
-        
-    }
+
     img{
         filter: drop-shadow(10px 10px 1px rgba(0,0,0,0.06));
         transform: scale(1.3);
+        
+    }
+}
+
+.menu:hover{
+  
+
+    background: radial-gradient(circle farthest-corner at center center, rgba(211,172,8,0.44) 0%, #fccc04  80%);
+    background: -webkit-radial-gradient(circle farthest-corner at center center, rgba(211,172,8,0.44) 0%, #fccc04 80%);
+    background: -moz-radial-gradient(circle farthest-corner at center center, rgba(211,172,8,0.44) 0%, #fccc04 80%);
+    img{
+        filter: drop-shadow(10px 10px 1px rgba(0,0,0,0.06));
+        transform: scale(1.4);
         
     }
 }
@@ -139,62 +105,15 @@ mat-form-field.mat-form-field{
 //Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 575px) {
 
-    .home{
-        height: 60vh;
-        margin-top: 30px;
-    }
-    .btnLink{
-        font-size: 4vw;
+    .font{
+        font-size: 1.2em;
     }
 
-    .fontTitles{
-        font-size: 7vw;
+    h1.font{
+        font-size: 1.6em;
+        font-weight: bold;
     }
-
-    .wood{
-        height: 300px;
-        margin-top: 10px;
-    }
-
-    .wood:hover{
-        height: 300px;
-        margin-top: 10px;
-     
-       .fontTitles{
-            font-size: 6vw;
-        }
-    }
-
-    .paint{
-        height: 300px;
-        margin-top: 10px;
-    }
-
-    .paint:hover{
-        height: 300px;
-        margin-top: 10px;
-     
-       .fontTitles{
-            font-size: 6vw;
-        }
-    }
-
-    .stencil{
-        height: 300px;
-        margin-top: 10px;
-    }
-
-    .stencil:hover{
-        height: 300px;
-        margin-top: 10px;
-     
-       .fontTitles{
-            font-size: 6vw;
-        }
-    }
-
     
-
    
 }
 
@@ -217,12 +136,29 @@ mat-form-field.mat-form-field{
 /* x-large devices (desktops, 1200 px and up) */ 
 @media only screen and (min-width: 1200px) {
     
+    .logo-header{
+    
+    ::ng-deep .mat-form-field-appearance-outline .mat-form-field-outline {
+ 
+        border-radius: 50px;
+    }
+    
+    mat-form-field.mat-form-field{
+        font-size: 1vw;
+    }
+}
+      
+
 
 }
-    
 
-/* XX- Large devices (larger desktops, 1400px and up) */ 
+
+
+
 @media only screen and (min-width: 1400px) {
+/* XX- Large devices (larger desktops, 1400px and up) */ 
+     
+
 
 }
     

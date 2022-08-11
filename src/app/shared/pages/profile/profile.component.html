@@ -12,10 +12,10 @@
     <!-- end profile header -->
 
 
-    <form  [formGroup]="myForm"  fxLayout="row wrap" fxLayoutAlign="center center" fxFlex="100"  style="margin-top: 35px">     
+    <form  [formGroup]="myForm"  fxLayout="row wrap" fxLayoutAlign="center center" fxFlex.xs="100" fxFlex="70"  style="margin-top: 35px">     
 
         <mat-form-field appearance="legacy" fxFlex="85" class="mt-20 font fs-5"> 
-            <mat-label class="font fs-5">Nombre</mat-label>
+            <mat-label>Nombre</mat-label>
             <input matInput type="text" required formControlName="name">
         </mat-form-field> 
  
@@ -55,7 +55,7 @@
 <!-- save button -->
 <div fxLayout="row wrap" fxLayoutAlign="center center"  fxFlex="100" style="margin-bottom: 10px;">
     
-    <div fxLayout="row wrap" fxLayoutAlign="center center" class="btnSave" fxFlex="50" (click)="onSaveForm()">
+    <div fxLayout="row wrap" fxLayoutAlign="center center" class="btnSave" fxFlex.xs="50" fxFlex="20" (click)="onSaveForm()">
         <span class="font fs-5">Guardar</span>
     </div>
     

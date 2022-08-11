@@ -1,42 +1,40 @@
 
 
 .icon:hover{
+
+    cursor: pointer;
     .font{
-        color: rgb(0, 0, 0);
+        color: red;
+    }
+    i{
+        color: red;
     }
 }
 
     
-
-
 .font{
-    font-family: 'awesome';
-    font-size: 2vw;
-    color: rgba(0, 0, 0, 0.349);
-}
+    font-family:'poppins-light';
+    font-size: 1.5em;
+  }
+
+.footer{
+    height: 80px;
+    border-top: 1px solid red;
+}  
+
+
+
 
 //Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 575px) {
 
-    .home{
-        height: 60vh;
-        margin-top: 30px;
-    }
-    .btnLink{
-        font-size: 4vw;
-    }
-
-    .fontTitles{
-        font-size: 7vw;
-    }
-
-    
-
     .font{
-        color: rgba(0, 0, 0, 0.338);
-        font-size: 4vw;
-       
-   }
+        font-size: 1.2em;
+        color: rgba(0, 0, 0, 0.349);
+
+      }
+
+
 }
 
 @media only screen and (min-width: 576px) {
@@ -57,6 +55,21 @@
 
 /* x-large devices (desktops, 1200 px and up) */ 
 @media only screen and (min-width: 1200px) {
+    
+    .font{
+        font-size: 1.3em;
+      }
+    i{
+        transform: scale(1.2);
+    }
+
+    .footer{
+        height: 100px;
+        border-top: 1px solid red;
+    }  
+    
+    
+
     
 
 }

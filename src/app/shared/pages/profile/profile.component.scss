@@ -9,3 +9,49 @@
     -webkit-box-shadow: -1px 4px 14px -2px rgba(121, 121, 121,0.75);
     -moz-box-shadow: -1px 4px 14px -2px rgba(121, 121, 121,0.75);
 }
+
+//Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 575px) {
+
+    .font{
+        font-size: 1.2em;
+    }
+
+    h1.font{
+        font-size: 1.6em;
+        font-weight: bold;
+    }
+    
+   
+}
+
+@media only screen and (min-width: 576px) {
+
+}
+    
+
+/* medium devices (tablets, 768 px and up) */ 
+@media only screen and (min-width: 786px) {
+
+}
+    
+
+/* large devices (desktops, 992 px and up) */ 
+@media only screen and (min-width: 992px) {
+
+}
+
+/* x-large devices (desktops, 1200 px and up) */ 
+@media only screen and (min-width: 1200px) {
+
+
+}
+
+
+@media only screen and (min-width: 1400px) {
+/* XX- Large devices (larger desktops, 1400px and up) */ 
+     
+
+
+}
+    

@@ -6,7 +6,7 @@
         <!-- <img src="assets/logo-header.png" alt="" fxFlex="15"> -->
         
         
-        <form  fxLayout="row wrap" fxLayoutAlign="center center" style="margin-top: 25px; " fxFlex="100">
+        <form  fxLayout="row wrap" fxLayoutAlign="center center" style="margin-top: 25px; " fxFlex="30" fxFlex.xs="100">
             <mat-form-field  appearance="outline"   fxFlex="90" >
                 <input type="text" matInput  placeholder="        Buscar en Centro Cocina!!!">
                 <mat-icon matSuffix style="transform:scale(1.7); color: red; margin-right: 20px;">search</mat-icon>
@@ -14,21 +14,22 @@
         </form>
     </div>
     
-    <div  fxLayout="row wrap"  fxLayoutAlign="start" fxFlex="95"  style="margin-top: 15px" >
-        <h1 style="" fxFlex="100" class="font">Hola, <b>Marcelo!!</b></h1>
-        <h1 style="" class="font">Necesitás <b style="color: red; cursor: pointer;" routerLink="../delivery">delivery?</b></h1>
+    <div  fxLayout="row wrap"  fxLayoutAlign="start" fxFlex="95"  style="margin-top: 40px;">
+        <span  class="font" fxFlex="100" >Hola, <b>Marcelo!!</b></span>
+        <br><br>
+        <span  class="font">Necesitás <b style="color: red; cursor: pointer;" routerLink="../delivery">delivery?</b></span>
     </div>    
 
-    <div fxLayout="row wrap" fxLayoutAlign="space-between " fxFlex="98" class="logo-container" style="margin-top: 30px">
-        <img src="assets/logo-pizza.png" alt="" fxFlex="23" class="mini-logo"  >
-        <img src="assets/logo-hamburger.png" alt="" fxFlex="23" class="mini-logo" routerLink="../fast-food-h">
-        <img src="assets/logo-pasta.png" alt="" fxFlex="23" class="mini-logo">
-        <img src="assets/logo-organic.png" alt="" fxFlex="23" class="mini-logo">
+    <div fxLayout="row wrap" fxLayoutAlign="space-between center " fxFlex="98" class="logo-container" class="mt-30">
+        <img src="assets/logo-pizza.png" alt="" fxFlex="25" class="mini-logo"  >
+        <img src="assets/logo-hamburger.png" alt="" fxFlex="25" class="mini-logo" routerLink="../fast-food-h">
+        <img src="assets/logo-pasta.png" alt="" fxFlex="25" class="mini-logo">
+        <img src="assets/logo-organic.png" alt="" fxFlex="25" class="mini-logo">
     </div>
 
     
     <div class="" fxLayout="row wrap"  fxLayoutAlign="center center" fxFlex="95"  style="margin-top: 60px">
-        <img src="assets/off3.png" alt="" fxFlex="100">
+        <img src="assets/off3.png" alt="" fxFlex="80" fxFlex.xs="100">
     </div>
 
 
@@ -39,24 +40,29 @@
     </div> -->
   
 
-    <div  fxLayout="row wrap"  fxLayoutAlign="center center" fxFlex="95"  style="margin-top: 40px">
-        <h1 fxLayoutAlign="center "fxFlex="100">Nuestro Menú</h1>
+    <div  fxLayout="row wrap"  fxLayoutAlign="center center" fxFlex="95"  class="mt-40">
+        <h1 fxLayoutAlign="center center" class="font" fxFlex="100">Nuestro Menú</h1>
     </div>
 
-    <div class="hamburger" fxLayout="row wrap"  fxLayoutAlign="center center" fxFlex="95" routerLink="../fast-food-h" style="margin-top: 40px">
-        <h2 fxFlex="65" >Hamburguesas</h2>
-        <img src="assets/food1.png" alt="" fxFlex="30">
-    </div>
-    
-    <div class="hamburger" fxLayout="row wrap"  fxLayoutAlign="center center" fxFlex="95"  style="margin-top: 40px">
-        <h2 fxFlex="65">Pizzas</h2>
-        <img src="assets/pizza.png" alt="" fxFlex="30" style="transform: scale(1.45)">
+    <div fxLayout="row wrap"  fxLayoutAlign="space-between center" fxFlex="95" style="margin-top: 40px">
+
+
+        <div class="menu " fxLayout="row wrap"  fxLayoutAlign="center center" fxFlex.xs="95" fxFlex="30" routerLink="../fast-food-h" style="margin-top: 40px">
+            <h2 fxFlex="65" class="font" >Hamburguesas</h2>
+            <img src="assets/food1.png" alt="" fxFlex.xs="30" fxFlex="50">
+        </div>
+        
+        <div class="menu" fxLayout="row wrap"  fxLayoutAlign="center center" fxFlex.xs="95" fxFlex="30"  style="margin-top: 40px">
+            <h2 fxFlex="65" class="font">Pizzas</h2>
+            <img src="assets/pizza.png" alt="" fxFlex.xs="30" fxFlex="50" style="transform: scale(1.45)">
+        </div>
+
+        <div class="menu" fxLayout="row wrap"  fxLayoutAlign="center center" fxFlex.xs="95" fxFlex="30"  style="margin-top: 40px">
+            <h2 fxFlex="65" class="font">Pastas</h2>
+            <img src="assets/pasta.png" alt="" fxFlex.xs="30" fxFlex="50" style="transform: scale(1.7)">
+        </div>
     </div>
 
-    <div class="hamburger" fxLayout="row wrap"  fxLayoutAlign="center center" fxFlex="95"  style="margin-top: 40px">
-        <h2 fxFlex="65">Pastas</h2>
-        <img src="assets/pasta.png" alt="" fxFlex="30" style="transform: scale(1.7)">
-    </div>
 
 
 </div>
