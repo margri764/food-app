@@ -1,13 +1,15 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
+import { GoogleMapsModule } from '@angular/google-maps';
 import { AppRoutingModule } from './app-routing.module';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { FlexLayoutModule } from '@angular/flex-layout';
+import { ReactiveFormsModule } from '@angular/forms';
+
 import { AppComponent } from './app.component';
 import { HomeComponent } from './shared/pages/home/home.component';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HeaderComponent } from './shared/pages/header/header.component';
 import { MaterialModule } from './material/material.module';
-import { FlexLayoutModule } from '@angular/flex-layout';
 import { SliderComponent } from './shared/pages/slider/slider.component';
 import { LocationComponent } from './shared/messages/location/location/location.component';
 import { HamburgerComponent } from './shared/pages/hamburger/hamburger.component';
@@ -24,11 +26,11 @@ import { OrderComponent } from './shared/pages/order/order.component';
 import { MoreComponent } from './shared/pages/more/more.component';
 import { ProfileComponent } from './shared/pages/profile/profile.component';
 import { SettingsComponent } from './shared/pages/settings/settings.component';
-import { ReactiveFormsModule } from '@angular/forms';
 import { BannerRegisterComponent } from './shared/pages/banner-register/banner-register.component';
 import { LoginComponent } from './shared/pages/login/login.component';
 import { RegisterComponent } from './shared/pages/register/register.component';
 import { GoogleRegisterComponent } from './shared/pages/messages/google-register/google-register.component';
+import { GeoComponent } from './shared/pages/geo/geo.component';
 
 @NgModule({
   declarations: [
@@ -54,7 +56,8 @@ import { GoogleRegisterComponent } from './shared/pages/messages/google-register
     BannerRegisterComponent,
     LoginComponent,
     RegisterComponent,
-    GoogleRegisterComponent
+    GoogleRegisterComponent,
+    GeoComponent
 
   ],
   imports: [
@@ -63,7 +66,9 @@ import { GoogleRegisterComponent } from './shared/pages/messages/google-register
     BrowserAnimationsModule,
     MaterialModule,
     FlexLayoutModule,
+    GoogleMapsModule,
     ReactiveFormsModule
+
 
   ],
   providers: [],
