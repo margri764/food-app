@@ -1,54 +1,75 @@
 <div fxLayout="row wrap" fxLayoutAlign="center center" fxFlex="100">
-
-    <form  [formGroup]="myForm"   fxLayout="row wrap" fxLayoutAlign="center center" fxFlex="80"  style="margin-top: 30px;">     
-                
-        <input type="text" #inputPlaces id="inputPlaces" formControlName="busqueda" >
+    
+    <div fxLayout="row wrap"  fxLayoutAlign="space-between center"  fxFlex="100" class="header">
         
-        <div fxLayout="row wrap" fxLayoutAlign="space-between center" fxFlex="85" >
-            <mat-form-field appearance="outline" fxFlex="55" class="mt-10 font fs-5" >      
-                <mat-label>Calle</mat-label>
-                <input matInput type="text" required formControlName="direccion">
-            </mat-form-field> 
-       
-            
-            <mat-form-field appearance="outline" fxFlex="30" class="mt-10 font fs-5" >      
-                <mat-label>Numero</mat-label>
-                <input matInput type="text" required formControlName="number">
-            </mat-form-field> 
+        <div fxLayout="row wrap"  fxLayoutAlign="start"  fxFlex="25" >
+           <button mat-mini-fab  aria-label="Example icon button with a delete icon" routerLink="../home" >
+            <mat-icon style="transform: scale(0.9);">arrow_back_ios_new</mat-icon>
+          </button>
         </div>
-       
-       
-       
-       <mat-form-field appearance="outline" fxFlex="85" class="mt-10 font fs-5" >      
+        
+        <span class="font fs-6" fxLayoutAlign="center center"  fxFlex="50">Tu dirección</span>
+        
+        <div fxFlex="25"></div>
+    </div>  
+
+    
+    
+    <!-- <div fxLayout="row wrap" fxLayoutAlign="center center"  fxFlex="95" style="margin-top: 30px;" *ngIf="!showForm">
+        <span class="font fs-4"><b> ¿Queres que llevemos tu pedido a ...(direccion en backend)? </b></span>    
+    </div> -->
+    
+    <form  [formGroup]="myForm"  fxLayout="row wrap" fxLayoutAlign="center center" fxFlex="100"  style="margin-top: 20px;" >     
+        
+        <mat-form-field appearance="standard" fxFlex="85" class="mt-10 font fs-5" *ngIf="!showForm">      
+            <mat-label>Direccion para delivery</mat-label>
+            <input matInput type="text" #inputPlaces id="inputPlaces" formControlName="busqueda">
+        </mat-form-field> 
+        
+        <div class="maps" #divMap ></div>
+
+        <div *ngIf="showForm" fxLayout="row wrap" fxLayoutAlign="space-between center" fxFlex="95">
+        
+        <mat-form-field appearance="standard" fxFlex="40" class="mt-5 font fs-4" >      
+            <mat-label>Calle</mat-label>
+            <input matInput type="text"  formControlName="direccion">
+        </mat-form-field> 
+            
+      
+        <mat-form-field appearance="standard" fxFlex="40" class="mt-5 font fs-4" >      
             <mat-label>Edificio, Dpto, piso (opcional)</mat-label>
-            <input matInput type="text" required formControlName="referencia">
+            <input matInput type="text"  formControlName="referencia">
         </mat-form-field> 
             
             
-        <mat-form-field appearance="outline" fxFlex="85" class="mt-10 font fs-5" >      
+        <mat-form-field appearance="standard" fxFlex="40" class="font fs-4" >      
             <mat-label>Ciudad</mat-label>
-            <input matInput type="text" required formControlName="ciudad">
+            <input matInput type="text"  formControlName="ciudad">
         </mat-form-field> 
 
-        <mat-form-field appearance="outline" fxFlex="85" class="mt-10 font fs-5" >      
+        <mat-form-field appearance="standard" fxFlex="40" class="font fs-4" >      
             <mat-label>Provincia</mat-label>
-            <input matInput type="text" required formControlName="provincia">
+            <input matInput type="text"  formControlName="provincia">
         </mat-form-field> 
 
-        <mat-form-field appearance="outline" fxFlex="85" class="mt-10 font fs-5" >      
-            <mat-label>Region</mat-label>
-            <input matInput type="text" required formControlName="region">
-        </mat-form-field> 
+    
+        <div fxLayout="row wrap" fxLayoutAlign="start  center"  fxFlex="100" style="margin-top: 20px; margin-bottom: 20px;">
+        
+           <i [ngClass]="selected ? 'material-icons':'material-symbols-outlined'" (click)="selectFavorite()" >favorite</i> &nbsp;&nbsp; <span class="font fs-4">Guardar como dirección favorita</span>
+
+        </div>
+
             
+        <div fxLayout="row wrap" fxLayoutAlign="center center"  fxFlex="100" style="margin-bottom: 20px;">
+
+            <button mat-raised-button fxFlex="100" class="font"   class="confirm font fs-5" (click)="onSaveForm()"><i class="material-symbols-outlined" style="transform: scale(1.3);">done</i> 
+                &nbsp; &nbsp; Confirmar dirección
+             </button>
+        </div>
+    </div>
         
     </form>
     
     
-    <div fxLayout="row wrap" fxLayoutAlign="center center"  fxFlex="100" style="margin-bottom: 20px;">
-        <div  fxLayout="row wrap"  fxLayoutAlign="start" fxFlex="95"  style="margin-top: 15px; cursor: pointer;" (click)="onSaveForm()" >
-            <p class="font fs-4"> Guardar</p>
-        </div>    
-    </div>
     
-    <div class="mapa" #divMap style="width: 800px; height:800px; border:2px solid"></div>
 </div>

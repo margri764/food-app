@@ -6,12 +6,12 @@
     <!-- <div class="page-wrapper" *ngIf="disabled"> -->
         <div class="page-wrapper">
 
-            <div class="sticky-header">
+            <!-- <div class="sticky-header">
           
               <app-header *ngIf="!(router.url === '/home' || router.url === '/start' || router.url === '/cart' || router.url === '/profile'
               || router.url === '/register' || router.url === '/login')"></app-header>
             
-            </div>
+            </div> -->
             <div class="content-wrapper">
             
                 <div class="content">
@@ -19,7 +19,7 @@
       
       
                 <div fxLayout="row wrap" fxLayoutAlign="center center">
-                 <app-banner-register *ngIf="!(router.url === '/profile' || router.url === '/register' || router.url === '/login'&& login)" style="width:90vw ;"></app-banner-register>
+                 <app-banner-register *ngIf="!(router.url === '/profile' || router.url === '/register' || router.url === '/login' || router.url === '/geo' && login)" style="width:90vw ;"></app-banner-register>
                 </div>
                  <router-outlet> </router-outlet> 
                  

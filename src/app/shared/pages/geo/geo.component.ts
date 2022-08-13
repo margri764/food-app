@@ -17,9 +17,12 @@ export class GeoComponent implements OnInit, AfterViewInit {
 
   mapa!:google.maps.Map;
   markers!:google.maps.Marker[];
+  startPosition!: GeolocationPosition;
 
   myForm!: FormGroup;
   bannerStatus: boolean=false;
+  showForm:boolean= false;
+  selected:boolean = false;
   
     constructor( private fb: FormBuilder,
                  private authservice : AuthService,
@@ -39,11 +42,12 @@ ngOnInit() {
   this.myForm = this.fb.group({
     busqueda:   [ '' ],
     direccion:  [ '' ],
-    number:  [ '' ],
+    number:     [ '' ],
     referencia: [ '' ],
     ciudad:     [ '' ],
     provincia:  [ '' ],
-    region:     [ '' ],
+    favorite:   [ '' ],
+
     
   });
   
@@ -53,7 +57,8 @@ ngAfterViewInit() {
 
   if(navigator.geolocation){
     navigator.geolocation.getCurrentPosition((position) => {
-       this.cargarMapa (position);
+      this.startPosition=position;
+      // this.cargarMapa (position);
       this.cargarAutocomplete();
     })
   }else{
@@ -73,7 +78,16 @@ private cargarAutocomplete(){
 
   google.maps.event.addListener(autocomplete, 'place_changed',()=>{
     const place : any = autocomplete.getPlace();
+
     console.log('el place completo es:', place);
+
+    //solo muestra el formulario y el mapa si hay una direccion completa
+     if(place){
+      this.showForm=true;
+      this.cargarMapa(this.startPosition);
+     }else{
+      return
+     }
 
     this.mapa.setCenter(place.geometry.location);
     const marker = new google.maps.Marker({
@@ -108,30 +122,28 @@ llenarFormulario(place:any){
   };
 
   const componentForm ={
-    direccion :  'route',
-    number:      'street_number',
+    direccion :  'location',
     ciudad :     'administrative_area_level_2',
     provincia :  'administrative_area_level_1',
-    region :     'administrative_area_level_3'
   };
 
   Object.entries(componentForm).forEach( entry =>{
     const [key, value]= entry;
-    console.log(key, value);
     this.myForm.controls[key].setValue(getAddresComp(value))
   });
 
-    this.myForm.controls['direccion'].setValue(getAddresComp("route")+''+getAddresComp('street_number'))
+    this.myForm.controls['direccion'].setValue(getAddresComp("route") +'  '+getAddresComp('street_number'))
 }
 
 cargarMapa( position:any){
+
   const opciones={
     center : new google.maps.LatLng(position.coords.latitude, position.coords.longitude),
     zoom: 17,
     mapTypeId: google.maps.MapTypeId.ROADMAP
   };
-  
   this.mapa= new google.maps.Map(this.rendered.selectRootElement(this.divMap.nativeElement),opciones)
+
    const markerPosition= new google.maps.Marker({
     position: this.mapa.getCenter(),
     title: 'Marcelo'
@@ -141,27 +153,17 @@ cargarMapa( position:any){
    this.markers.push(markerPosition);
 
 }
+
+selectFavorite(){
+  this.selected=!this.selected;
+  (this.selected)? this.myForm.controls['favorite'].setValue('es la direccion favorita'):'';
+}
                   
   }
                 
       
 
-// geo(){
-        
-//   navigator.geolocation.getCurrentPosition(pos => {
-//        this.geoUpdate(pos.coords.latitude, pos.coords.longitude)
-//   })
 
-// geoUpdate(lat:number,long:number){
-  
-//  const googleMapKey = 'AIzaSyA5mjCwx1TRLuBAjwQw84WE6h5ErSe7Uj8';
-
-// this.geoL=this.sanitizer.bypassSecurityTrustResourceUrl(`https://maps.googleapis.com/maps/api/staticmap?center=${lat},${ long}&zoom=17&size=400x400
-// &markers=color:blue%7Clabel:S%7C62.107733,-145.541936&markers=size:tiny%7Ccolor:green%7CDelta+Junction,AK
-// &markers=size:mid%7Ccolor:0xFFFF00%7Clabel:C%7CTok,AK"&key=${ googleMapKey }&signature=YOUR_SIGNATURE`)
-// }
-// }
-      
 
   
 
