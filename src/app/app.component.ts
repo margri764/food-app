@@ -33,7 +33,7 @@ export class AppComponent implements OnInit{
     this.router.navigateByUrl('start');
 
     setTimeout(()=>{
-      this.openDialog();
+      // this.openDialog();
 
     },10000)
   }

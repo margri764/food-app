@@ -3,6 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 
 // Components
 import { DeliveryComponent } from './shared/pages/delivery/delivery.component';
+import { GeoComponent } from './shared/pages/geo/geo.component';
 import { HamburgerComponent } from './shared/pages/hamburger/hamburger.component';
 import { HomeComponent } from './shared/pages/home/home.component';
 import { LoginComponent } from './shared/pages/login/login.component';
@@ -44,6 +45,9 @@ const routes: Routes = [
   },
   {
     path: 'success', component: SuccessComponent
+  },
+  {
+    path: 'geo', component: GeoComponent
   },
   {
     path: 'delivery', component: DeliveryComponent

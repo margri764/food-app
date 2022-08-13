@@ -1,0 +1,46 @@
+
+
+<div fxLayout="row wrap" fxLayoutAlign="center center" fxFlex="100">
+
+    <form  [formGroup]="myForm"   fxLayout="row wrap" fxLayoutAlign="center center" fxFlex="80"  style="margin-top: 30px;">     
+                
+        <input type="text" #inputPlaces id="inputPlaces" formControlName="busqueda" >
+        
+        <mat-form-field appearance="outline" fxFlex="85" class="mt-10 font fs-5" >		
+            <mat-label>Direccion</mat-label>
+            <input matInput type="text" required formControlName="direccion">
+        </mat-form-field> 
+
+        <mat-form-field appearance="outline" fxFlex="85" class="mt-10 font fs-5" >		
+            <mat-label>Edificio, Dpto, piso (opcional)</mat-label>
+            <input matInput type="text" required formControlName="referencia">
+        </mat-form-field> 
+            
+            
+        <mat-form-field appearance="outline" fxFlex="85" class="mt-10 font fs-5" >		
+            <mat-label>Ciudad</mat-label>
+            <input matInput type="text" required formControlName="ciudad">
+        </mat-form-field> 
+
+        <mat-form-field appearance="outline" fxFlex="85" class="mt-10 font fs-5" >		
+            <mat-label>Provincia</mat-label>
+            <input matInput type="text" required formControlName="provincia">
+        </mat-form-field> 
+
+        <mat-form-field appearance="outline" fxFlex="85" class="mt-10 font fs-5" >		
+            <mat-label>Region</mat-label>
+            <input matInput type="text" required formControlName="region">
+        </mat-form-field> 
+            
+        
+    </form>
+    
+    
+    <div fxLayout="row wrap" fxLayoutAlign="center center"  fxFlex="100" style="margin-bottom: 20px;">
+        <div  fxLayout="row wrap"  fxLayoutAlign="start" fxFlex="95"  style="margin-top: 15px; cursor: pointer;" (click)="onSaveForm()" >
+            <p class="font fs-4"> Guardar</p>
+        </div>    
+    </div>
+    
+    <div class="mapa" #divMap style="width: 800px; height:800px; border:2px solid"></div>
+</div>

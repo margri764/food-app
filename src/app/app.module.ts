@@ -31,6 +31,9 @@ import { RegisterComponent } from './shared/pages/register/register.component';
 import { GoogleRegisterComponent } from './shared/pages/messages/google-register/google-register.component';
 import { ServiceWorkerModule } from '@angular/service-worker';
 import { environment } from '../environments/environment';
+import { GeoComponent } from './shared/pages/geo/geo.component';
+
+import {GoogleMapsModule} from '@angular/google-maps'; 
 
 @NgModule({
   declarations: [
@@ -56,7 +59,8 @@ import { environment } from '../environments/environment';
     BannerRegisterComponent,
     LoginComponent,
     RegisterComponent,
-    GoogleRegisterComponent
+    GoogleRegisterComponent,
+    GeoComponent
 
   ],
   imports: [
@@ -66,6 +70,7 @@ import { environment } from '../environments/environment';
     MaterialModule,
     FlexLayoutModule,
     ReactiveFormsModule,
+    GoogleMapsModule,
     ServiceWorkerModule.register('ngsw-worker.js', {
       enabled: environment.production,
       // Register the ServiceWorker as soon as the application is stable
