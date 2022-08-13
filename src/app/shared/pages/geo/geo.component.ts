@@ -120,6 +120,8 @@ llenarFormulario(place:any){
     console.log(key, value);
     this.myForm.controls[key].setValue(getAddresComp(value))
   });
+
+    this.myForm.controls['direccion'].setValue(getAddresComp("route")+''+getAddresComp('street_number'))
 }
 
 cargarMapa( position:any){
