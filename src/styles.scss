@@ -114,4 +114,17 @@ body { margin: 0; font-family: "Helvetica Neue", sans-serif; }
     }
 }
 
+.custom-modalbox-geo {
+  
+  max-width: 90vw!important;  /*max-width para el ancho del dialog*/
+  height: 50vh!important;
+
+
+  .mat-dialog-container{
+    padding: 0px!important;
+    border-radius: 10px !important;
+    margin: 0 auto;
+    }
+}
+
 

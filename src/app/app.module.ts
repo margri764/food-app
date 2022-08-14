@@ -31,6 +31,7 @@ import { LoginComponent } from './shared/pages/login/login.component';
 import { RegisterComponent } from './shared/pages/register/register.component';
 import { GoogleRegisterComponent } from './shared/pages/messages/google-register/google-register.component';
 import { GeoComponent } from './shared/pages/geo/geo.component';
+import { PopLocationComponent } from './shared/pages/geo/pop-location/pop-location.component';
 
 @NgModule({
   declarations: [
@@ -57,7 +58,8 @@ import { GeoComponent } from './shared/pages/geo/geo.component';
     LoginComponent,
     RegisterComponent,
     GoogleRegisterComponent,
-    GeoComponent
+    GeoComponent,
+    PopLocationComponent,
 
   ],
   imports: [
