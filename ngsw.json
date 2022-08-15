@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1660233198541,
+  "timestamp": 1660599132173,
   "index": "/food-app/index.html",
   "assetGroups": [
     {
@@ -13,11 +13,11 @@
       "urls": [
         "/food-app/favicon.ico",
         "/food-app/index.html",
-        "/food-app/main.f5762514bdf310a1.js",
+        "/food-app/main.12696b4997cdf83e.js",
         "/food-app/manifest.webmanifest",
         "/food-app/polyfills.d2a247a732c31884.js",
         "/food-app/runtime.b3c1ecb36dd80492.js",
-        "/food-app/styles.ac463531bd8641eb.css"
+        "/food-app/styles.ea33e09c6b5ec7c3.css"
       ],
       "patterns": []
     },
@@ -33,6 +33,7 @@
         "/food-app/assets/arrow.gif",
         "/food-app/assets/background.png",
         "/food-app/assets/centrococina-logo.png",
+        "/food-app/assets/coca.png",
         "/food-app/assets/delivery.png",
         "/food-app/assets/font/fontawesome-webfont.ttf",
         "/food-app/assets/font/poppins/OFL.txt",
@@ -58,6 +59,7 @@
         "/food-app/assets/fries.png",
         "/food-app/assets/google-register.png",
         "/food-app/assets/google.png",
+        "/food-app/assets/icecream.png",
         "/food-app/assets/icons/centrococina-128x128.png",
         "/food-app/assets/icons/centrococina-144x144.png",
         "/food-app/assets/icons/centrococina-152x152.png",
@@ -106,6 +108,7 @@
     "/food-app/assets/arrow.gif": "ab0571cd5040e44410074542d7970da0355d5931",
     "/food-app/assets/background.png": "c71bf2377ee81195971c30073e031a7dc1f9fb1c",
     "/food-app/assets/centrococina-logo.png": "d4a7b480e04dc46b73a2ee1c6cfae8ad4474d314",
+    "/food-app/assets/coca.png": "b7348d2b57f49f3bc55be00a539d40a224e60519",
     "/food-app/assets/delivery.png": "fa27960ae87aee472830f11bfdc6710aa03e0c42",
     "/food-app/assets/font/fontawesome-webfont.ttf": "13b1eab65a983c7a73bc7997c479d66943f7c6cb",
     "/food-app/assets/font/poppins/OFL.txt": "8d6c34b70e3d638c82d7b5aba3f847f7d6d2c831",
@@ -131,6 +134,7 @@
     "/food-app/assets/fries.png": "c67952a482e182386219d2d58059499bd1fe5dee",
     "/food-app/assets/google-register.png": "5586d62697df1c1299b51984b981aefe34d9a2d3",
     "/food-app/assets/google.png": "e794af04c35cfcccfee914b45e87a2bdbee38d51",
+    "/food-app/assets/icecream.png": "a68c38d010505a4037a9bb708607218cee956378",
     "/food-app/assets/icons/centrococina-128x128.png": "4e9a04a162cfcc35929ed50d942b26106813db59",
     "/food-app/assets/icons/centrococina-144x144.png": "1ffd565f2d059c140de875697d9d89378f9222bb",
     "/food-app/assets/icons/centrococina-152x152.png": "4e67e1a8a060e47fbb83603c760d81a13605673e",
@@ -169,13 +173,13 @@
     "/food-app/background.47ced076a179255a.png": "c71bf2377ee81195971c30073e031a7dc1f9fb1c",
     "/food-app/favicon.ico": "22f6a4a3bcaafafb0254e0f2fa4ceb89e505e8b2",
     "/food-app/fontawesome-webfont.8a7cb27d142e3e19.ttf": "13b1eab65a983c7a73bc7997c479d66943f7c6cb",
-    "/food-app/index.html": "70882643101e76b75e0019fc0f2559bc3b254b50",
-    "/food-app/main.f5762514bdf310a1.js": "9e264f7ff2f2ec7ad46b05c5fa4cdff0803d371d",
-    "/food-app/manifest.webmanifest": "5f03c911392eb22d69331787840807f970d77963",
+    "/food-app/index.html": "9708b75e0954d4a0e758c296d16367af4e34687c",
+    "/food-app/main.12696b4997cdf83e.js": "d4d50d594f640045d4222daafff75c8cd81ec7ea",
+    "/food-app/manifest.webmanifest": "cca68de47c6db973b70b6f860b8ba76641fd7e05",
     "/food-app/off4.dae4f53be098a3fe.png": "3a6b5811e159ac965e77ba8fe304d105fef8aad6",
     "/food-app/polyfills.d2a247a732c31884.js": "83e4d1dad280fb6700ab0e98e0697f042f2f3ccf",
     "/food-app/runtime.b3c1ecb36dd80492.js": "1a5306f7430ddb86e22ecb0358bb506d4480dc4d",
-    "/food-app/styles.ac463531bd8641eb.css": "2afb4bc0f18278b8bf646849f585a6b4421d3f7a"
+    "/food-app/styles.ea33e09c6b5ec7c3.css": "8370f698ef53fc06d992d6df16431244bccf6441"
   },
   "navigationUrls": [
     {
