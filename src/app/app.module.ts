@@ -34,6 +34,9 @@ import { GoogleRegisterComponent } from './shared/pages/messages/google-register
 import { GeoComponent } from './shared/pages/geo/geo.component';
 import { PopLocationComponent } from './shared/pages/geo/pop-location/pop-location.component';
 import { HttpClientModule } from '@angular/common/http';
+import { ServiceWorkerModule } from '@angular/service-worker';
+import { environment } from '../environments/environment';
+
 
 @NgModule({
   declarations: [
@@ -73,6 +76,14 @@ import { HttpClientModule } from '@angular/common/http';
     GoogleMapsModule,
     ReactiveFormsModule,
     HttpClientModule
+    GoogleMapsModule,
+    ReactiveFormsModule,
+    ServiceWorkerModule.register('ngsw-worker.js', {
+      enabled: environment.production,
+      // Register the ServiceWorker as soon as the application is stable
+      // or after 30 seconds (whichever comes first).
+      registrationStrategy: 'registerWhenStable:30000'
+    })
 
 
   ],
