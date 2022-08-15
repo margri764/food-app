@@ -3,6 +3,7 @@ import { MatBottomSheet } from '@angular/material/bottom-sheet';
 import { MatDialog } from '@angular/material/dialog';
 import { Router } from '@angular/router';
 import { AuthService } from './services/auth/auth.service';
+import { FoodService } from './services/food/food.service';
 import { LocationComponent } from './shared/messages/location/location/location.component';
 import { PopusComponent } from './shared/pages/popus/popus.component';
 
@@ -24,6 +25,7 @@ export class AppComponent implements OnInit{
                private dialog : MatDialog,
                private authservice : AuthService,
                private _bottomSheet: MatBottomSheet,
+               private foodService : FoodService
     ) {
     
   }

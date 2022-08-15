@@ -7,6 +7,7 @@ import { FlexLayoutModule } from '@angular/flex-layout';
 import { ReactiveFormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
+import { Cart } from './cart.model';
 import { HomeComponent } from './shared/pages/home/home.component';
 import { HeaderComponent } from './shared/pages/header/header.component';
 import { MaterialModule } from './material/material.module';
@@ -32,6 +33,7 @@ import { RegisterComponent } from './shared/pages/register/register.component';
 import { GoogleRegisterComponent } from './shared/pages/messages/google-register/google-register.component';
 import { GeoComponent } from './shared/pages/geo/geo.component';
 import { PopLocationComponent } from './shared/pages/geo/pop-location/pop-location.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -69,11 +71,14 @@ import { PopLocationComponent } from './shared/pages/geo/pop-location/pop-locati
     MaterialModule,
     FlexLayoutModule,
     GoogleMapsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    HttpClientModule
 
 
   ],
-  providers: [],
+  providers: [
+    Cart
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

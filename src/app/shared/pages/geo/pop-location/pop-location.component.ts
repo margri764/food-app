@@ -17,6 +17,7 @@ export class PopLocationComponent implements OnInit {
   ) { }
 
   ngOnInit(): void {
+    
 
     this.myForm = this.fb.group({
       busqueda:   [ '' ],

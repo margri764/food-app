@@ -11,21 +11,21 @@
         <div fxLayout="row wrap" fxLayoutAlign="center" fxFlex="50" style="margin-top: 50px;" #top>
             <div fxLayout="row wrap" fxLayoutAlign="center center" fxFlex="95" class="font fs-5" style="color: red;">
                 <p fxFlex="90" fxLayoutAlign="center center">Hamburguesa Simple </p>
-                <p fxFlex="90" fxLayoutAlign="center"><b>$ 760,00</b></p>
+                <p fxFlex="90" fxLayoutAlign="center"><b class="font fs-6">$700 </b></p>
             </div>
 
            <!-- counter -->
            <div fxLayout="row wrap" fxLayoutAlign="space-around center" fxFlex="45"  class="incrementer">
     
-            <div fxLayout="row wrap" fxLayoutAlign="center center" fxFlex="15" (click)="decrement()" >
+            <div fxLayout="row wrap" fxLayoutAlign="center center" fxFlex="15" (click)="decrement('hamburger')" >
                     <i class="material-symbols-outlined">remove</i>
             </div>
     
             <div fxLayout="row wrap" fxLayoutAlign="center center" fxFlex="20">
-                <mat-label style="font-size: 4vw;">{{value}}</mat-label>
+                <mat-label style="font-size: 4vw;">{{hamburger}}</mat-label>
             </div>
     
-            <div fxLayout="row wrap" fxLayoutAlign="center center" fxFlex="15" (click)="increment()">
+            <div fxLayout="row wrap" fxLayoutAlign="center center" fxFlex="15" (click)="increment('hamburger')">
                     <i class="material-symbols-outlined">add</i>
             </div>
         
@@ -55,30 +55,31 @@
     
     </div>  
     
-    <div fxLayout="row wrap" fxLayoutAlign="center center" fxFlex="98" class="whiteframe" style="margin-top: 30px;" class="font">
+    <div fxLayout="row wrap" fxLayoutAlign="center center" fxFlex="98" class="whiteframe" style="margin-top: 30px;" class="font ">
         <p fxFlex="98" > Extras</p>
 
         <div fxLayout="row wrap" fxLayoutAlign="space-between center" fxFlex="98"  style="margin-top: 10px;" >
         
             <!-- papas fritas -->
             <div fxLayout="row wrap" fxLayoutAlign="space-between center"  fxFlex="100">
-                <div fxLayout="row wrap" fxLayoutAlign="start center" fxFlex="50" style="">
+                <div fxLayout="row wrap" fxLayoutAlign="space-between center" fxFlex="50" >
                 <span style="font-size: 4vw;" >Papas fritas</span>
+                <span style="color: red;" class="fs-6" >&nbsp; &nbsp;<b> $ 230 </b></span>
                 </div>
 
                 <div fxLayout="row wrap" fxLayoutAlign="center center" fxFlex="50" style="">
                        <!-- counter -->
            <div fxLayout="row wrap" fxLayoutAlign="space-around center" fxFlex="45"  class="incrementer">
     
-            <div fxLayout="row wrap" fxLayoutAlign="center center" fxFlex="15" (click)="decrement()" >
+            <div fxLayout="row wrap" fxLayoutAlign="center center" fxFlex="15" (click)="decrement('fries')" >
                     <i class="material-symbols-outlined">remove</i>
             </div>
     
             <div fxLayout="row wrap" fxLayoutAlign="center center" fxFlex="20">
-                <mat-label style="font-size: 4vw;">{{value}}</mat-label>
+                <mat-label style="font-size: 4vw;">{{fries}}</mat-label>
             </div>
     
-            <div fxLayout="row wrap" fxLayoutAlign="center center" fxFlex="15" (click)="increment()">
+            <div fxLayout="row wrap" fxLayoutAlign="center center" fxFlex="15" (click)="increment('fries')">
                     <i class="material-symbols-outlined">add</i>
             </div>
         
@@ -90,23 +91,25 @@
 
             <!-- coca cola -->
             <div fxLayout="row wrap" fxLayoutAlign="space-between center"  fxFlex="100" style="margin-top: 10px">
-                <div fxLayout="row wrap" fxLayoutAlign="start center" fxFlex="50" style="">
+                <div fxLayout="row wrap" fxLayoutAlign="space-between center" fxFlex="50" style="">
                     <span style="font-size: 4vw;" >Coca Cola</span>
+                <span style="color: red;" class="fs-6" >&nbsp; &nbsp;<b> $ 180 </b></span>
+
                 </div>
  
              <div fxLayout="row wrap" fxLayoutAlign="center center" fxFlex="50" style="">
                     <!-- counter -->
            <div fxLayout="row wrap" fxLayoutAlign="space-around center" fxFlex="45"  class="incrementer">
     
-            <div fxLayout="row wrap" fxLayoutAlign="center center" fxFlex="15" (click)="decrement()" >
+            <div fxLayout="row wrap" fxLayoutAlign="center center" fxFlex="15" (click)="decrement('coca')" >
                     <i class="material-symbols-outlined">remove</i>
             </div>
     
             <div fxLayout="row wrap" fxLayoutAlign="center center" fxFlex="20">
-                <mat-label style="font-size: 4vw;">{{value}}</mat-label>
+                <mat-label style="font-size: 4vw;">{{coca}}</mat-label>
             </div>
     
-            <div fxLayout="row wrap" fxLayoutAlign="center center" fxFlex="15" (click)="increment()">
+            <div fxLayout="row wrap" fxLayoutAlign="center center" fxFlex="15" (click)="increment('coca')">
                     <i class="material-symbols-outlined">add</i>
             </div>
         
@@ -118,23 +121,25 @@
 
             <!-- Helado -->
             <div fxLayout="row wrap" fxLayoutAlign="space-between center"  fxFlex="100" style="margin-top: 10px">
-            <div fxLayout="row wrap" fxLayoutAlign="start center" fxFlex="50" style="">
+            <div fxLayout="row wrap" fxLayoutAlign="space-between center" fxFlex="50" style="">
                 <span style="font-size: 4vw;" >Helado</span>
+                <span style="color: red;" class="fs-6" >&nbsp; &nbsp;<b> $ 310 </b></span>
+
             </div>
 
             <div fxLayout="row wrap" fxLayoutAlign="center center" fxFlex="50" style="">
                     <!-- counter -->
            <div fxLayout="row wrap" fxLayoutAlign="space-around center" fxFlex="45"  class="incrementer">
     
-            <div fxLayout="row wrap" fxLayoutAlign="center center" fxFlex="15" (click)="decrement()" >
+            <div fxLayout="row wrap" fxLayoutAlign="center center" fxFlex="15" (click)="decrement('icecream')" >
                     <i class="material-symbols-outlined">remove</i>
             </div>
     
             <div fxLayout="row wrap" fxLayoutAlign="center center" fxFlex="20">
-                <mat-label style="font-size: 4vw;">{{value}}</mat-label>
+                <mat-label style="font-size: 4vw;">{{icecream}}</mat-label>
             </div>
     
-            <div fxLayout="row wrap" fxLayoutAlign="center center" fxFlex="15" (click)="increment()">
+            <div fxLayout="row wrap" fxLayoutAlign="center center" fxFlex="15" (click)="increment('icecream')">
                     <i class="material-symbols-outlined">add</i>
             </div>
         
@@ -145,13 +150,11 @@
         <!-- end helado -->
       </div>  
 
-
-
     </div>
 <!-- costo -->
-<div fxLayout="row wrap" fxLayoutAlign="space-between center" fxFlex="96" class="whiteframe" style="margin-top: 50px;" class="font fs-5">
+<div fxLayout="row wrap" fxLayoutAlign="space-between center" fxFlex="96" class="whiteframe" style="margin-top: 50px;" class="font fs-5" >
     <p fxFlex="50" fxLayoutAlign="start center" > Total</p>
-    <p fxFlex="50" fxLayoutAlign="center center"><b>$ 1230</b></p>
+    <p fxFlex="50" fxLayoutAlign="center center"><b>$ {{total}}</b></p>
 </div>    
 
 <button mat-raised-button fxFlex="97" class="btnFilled fs-5" style=" margin-top: 50px; margin-bottom: 10px;"  routerLink="../cart"><i class="material-symbols-outlined" style="transform: scale(1.3);">shopping_bag</i> 

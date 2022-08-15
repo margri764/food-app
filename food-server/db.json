@@ -1,0 +1,35 @@
+{
+   
+    "fast-food": [
+      {
+        "id": "hamburguesa",
+        "name": "Hamburguesa Simple",
+        "price": "700"  
+      },
+      {
+        "id": "pizza",
+        "name": "Pizza Shop",
+        "price": "500"  
+      }
+
+    ],
+
+    "additional": [
+        {
+          "id": "papas",
+          "name": "Papas fritas",
+          "price": "700"  
+        },
+        {
+          "id": "gaseosa",
+          "name": "Coca Cola",
+          "price": "200"  
+        },
+        {
+          "id": "helado",
+          "name": "Helado Frigor",
+          "price": "300"  
+        }  
+  
+      ]
+  }
