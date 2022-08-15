@@ -75,7 +75,7 @@ import { environment } from '../environments/environment';
     FlexLayoutModule,
     GoogleMapsModule,
     ReactiveFormsModule,
-    HttpClientModule
+    HttpClientModule,
     GoogleMapsModule,
     ReactiveFormsModule,
     ServiceWorkerModule.register('ngsw-worker.js', {
