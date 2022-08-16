@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1660654743782,
+  "timestamp": 1660670154579,
   "index": "/food-app/index.html",
   "assetGroups": [
     {
@@ -13,11 +13,11 @@
       "urls": [
         "/food-app/favicon.ico",
         "/food-app/index.html",
-        "/food-app/main.7019627ec225893b.js",
+        "/food-app/main.f309ac582640e509.js",
         "/food-app/manifest.webmanifest",
-        "/food-app/polyfills.d2a247a732c31884.js",
-        "/food-app/runtime.b3c1ecb36dd80492.js",
-        "/food-app/styles.ea33e09c6b5ec7c3.css"
+        "/food-app/polyfills.9bdfa9e648edbe6f.js",
+        "/food-app/runtime.0ff8542b5eb60d13.js",
+        "/food-app/styles.0a89980b5b0f610a.css"
       ],
       "patterns": []
     },
@@ -95,6 +95,7 @@
         "/food-app/assets/pizza.png",
         "/food-app/assets/shopping_bag_black_48dp.svg",
         "/food-app/assets/shopping_bag_white_48dp.svg",
+        "/food-app/assets/user.png",
         "/food-app/background.47ced076a179255a.png",
         "/food-app/fontawesome-webfont.8a7cb27d142e3e19.ttf",
         "/food-app/off4.dae4f53be098a3fe.png"
@@ -170,16 +171,17 @@
     "/food-app/assets/pizza.png": "8fbc24b3070a1c0eab55a0d7bbd2b8f4f2d33877",
     "/food-app/assets/shopping_bag_black_48dp.svg": "18a1f1b13effd12b094691587fd3bff55f9477d8",
     "/food-app/assets/shopping_bag_white_48dp.svg": "3e98d4e451adef9afc9e62f93801e15726b4f775",
+    "/food-app/assets/user.png": "ceb72febe578fc280e3d9ce6ff67edbdc2d863fe",
     "/food-app/background.47ced076a179255a.png": "c71bf2377ee81195971c30073e031a7dc1f9fb1c",
     "/food-app/favicon.ico": "22f6a4a3bcaafafb0254e0f2fa4ceb89e505e8b2",
     "/food-app/fontawesome-webfont.8a7cb27d142e3e19.ttf": "13b1eab65a983c7a73bc7997c479d66943f7c6cb",
-    "/food-app/index.html": "812b6bb81ba5d10d6a8af060233ac517ddc3f4b8",
-    "/food-app/main.7019627ec225893b.js": "2261da560ab105f1a63831b9e349f57b8a71a58c",
+    "/food-app/index.html": "21e765dbd6d49fedb7271377c5274c796f99368b",
+    "/food-app/main.f309ac582640e509.js": "e6a959a9d58a3bdac30e76e92aeed9888d930b7f",
     "/food-app/manifest.webmanifest": "8305d3bfcb75ca1c701eafb3e35dffc1dbc5b872",
     "/food-app/off4.dae4f53be098a3fe.png": "3a6b5811e159ac965e77ba8fe304d105fef8aad6",
-    "/food-app/polyfills.d2a247a732c31884.js": "83e4d1dad280fb6700ab0e98e0697f042f2f3ccf",
-    "/food-app/runtime.b3c1ecb36dd80492.js": "1a5306f7430ddb86e22ecb0358bb506d4480dc4d",
-    "/food-app/styles.ea33e09c6b5ec7c3.css": "8370f698ef53fc06d992d6df16431244bccf6441"
+    "/food-app/polyfills.9bdfa9e648edbe6f.js": "3dfaa31f768b71675a7cc2286f5cf857bb742801",
+    "/food-app/runtime.0ff8542b5eb60d13.js": "766daa31aedd3a33068f8fa31aa977e3f57092a2",
+    "/food-app/styles.0a89980b5b0f610a.css": "5c1bd6ceb2b00b6fac03861e1a8ec8e5f7c39b0f"
   },
   "navigationUrls": [
     {
