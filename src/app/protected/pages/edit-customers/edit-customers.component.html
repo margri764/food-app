@@ -1,0 +1,24 @@
+
+<div fxLayout="row wrap" fxLayoutAlign="space-between center" fxFlex="100">
+
+<mat-card class="font fs-4 mt-40" *ngFor="let a of api" fxFlex="23" fxFlex.xs="95">
+    <mat-card-header>
+      <mat-card-title><b> {{a.name.last}} &nbsp;{{a.name.first}}</b></mat-card-title>
+      <mat-card-subtitle>{{a.login.username}}</mat-card-subtitle>
+
+    </mat-card-header>
+    <img mat-card-image [src]="[a.picture.large]" >
+    <mat-card-content>
+        <p><b> Teléfono:</b> &nbsp; &nbsp;{{a.cell}} </p>
+        <p><b> Email:</b> &nbsp; &nbsp;{{a.email}} </p>
+        <p><b> Ubicación:</b> &nbsp; &nbsp;{{a.location.street.name}}&nbsp;{{a.location.street.number}} </p>
+        <p><b> Historial de pedidos: ....</b> </p>
+
+    </mat-card-content>
+    <mat-card-actions>
+      <button mat-button>Editar</button>
+      <button mat-button>Eliminar</button>
+    </mat-card-actions>
+  </mat-card>
+
+</div>

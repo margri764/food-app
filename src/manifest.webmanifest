@@ -2,7 +2,7 @@
   "name": "food-app",
   "short_name": "food-app",
   "theme_color": "#1976d2",
-  "background_color": "#fafafa",
+  "background_color": "#fccc04",
   "display": "standalone",
   "scope": "./",
   "start_url": "./",

@@ -17,7 +17,11 @@ import { StartComponent } from './shared/pages/start/start.component';
 import { SuccessComponent } from './shared/pages/success/success.component';
 
 const routes: Routes = [
-  
+
+  {
+    path: 'dashboard',
+    loadChildren: () => import('./protected/protected.module').then( m => m.ProtectedModule )
+  },
   
   {
     path: 'register', component: RegisterComponent
@@ -34,6 +38,7 @@ const routes: Routes = [
   {
     path: 'settings', component: SettingsComponent
   },
+ 
   {
     path: 'order', component: OrderComponent
   },

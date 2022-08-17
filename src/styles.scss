@@ -20,6 +20,9 @@ body { margin: 0; font-family: "Helvetica Neue", sans-serif; }
   font-family:'poppins-light';
 }
 
+.fs-2{
+  font-size: 0.8em;
+}
 .fs-3{
   font-size: 1em;
 }
@@ -68,6 +71,10 @@ body { margin: 0; font-family: "Helvetica Neue", sans-serif; }
 
 .mt-40{
   margin-top: 40px;
+}
+
+.ml-10{
+  margin-left: 10px;
 }
 
 
@@ -132,5 +139,15 @@ body { margin: 0; font-family: "Helvetica Neue", sans-serif; }
 
 
 
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+.custom-modalbox-edit {
+  
+  max-width: 90vw!important;  /*max-width para el ancho del dialog*/
+  height: 90vh!important;
+
+
+  .mat-dialog-container{
+    padding: 0px!important;
+    border-radius: 10px !important;
+    margin: 0 auto;
+    }
+}

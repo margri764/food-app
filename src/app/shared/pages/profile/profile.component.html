@@ -4,12 +4,21 @@
 
   <div fxLayout="row wrap" fxLayoutAlign="center center"  fxFlex="100">
 
-    <!-- profile header -->
-    <div fxLayout="row wrap" fxLayoutAlign="start center"  fxFlex="88" class="mt-40">
-            <span class="font fs-6"><b> Editar perfil</b></span>
-            <!-- <span class="font fs-6"><b> Listo</b></span> -->
-    </div>
-    <!-- end profile header -->
+    <div fxLayout="row wrap"  fxLayoutAlign="space-between center"  fxFlex.xs="100" fxFlex="70" style="margin-top: 25px; margin-left: 25px;" #top>
+        
+      <div fxLayout="row wrap"  fxLayoutAlign="start"  fxFlex="25" >
+         <button mat-mini-fab  aria-label="Example icon button with a delete icon" routerLink="../home" >
+          <mat-icon style="transform: scale(0.9);">arrow_back_ios_new</mat-icon>
+        </button>
+      </div>
+      
+      <div fxLayout="row wrap"  fxLayoutAlign="center center"  fxFlex="50" class="font fs-6">
+        <mat-card-title fxFlex="100"  fxLayoutAlign="center center"  >Editar Perfil</mat-card-title>
+      </div>
+
+      <div fxFlex="25"></div>
+  </div>  
+
 
 
     <form  [formGroup]="myForm"  fxLayout="row wrap" fxLayoutAlign="center center" fxFlex.xs="100" fxFlex="70"  style="margin-top: 35px">     

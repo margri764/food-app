@@ -36,6 +36,7 @@ import { PopLocationComponent } from './shared/pages/geo/pop-location/pop-locati
 import { HttpClientModule } from '@angular/common/http';
 import { ServiceWorkerModule } from '@angular/service-worker';
 import { environment } from '../environments/environment';
+import { ProtectedModule } from './protected/protected.module';
 
 
 @NgModule({
@@ -78,6 +79,7 @@ import { environment } from '../environments/environment';
     HttpClientModule,
     GoogleMapsModule,
     ReactiveFormsModule,
+    ProtectedModule,
     ServiceWorkerModule.register('ngsw-worker.js', {
       enabled: environment.production,
       // Register the ServiceWorker as soon as the application is stable

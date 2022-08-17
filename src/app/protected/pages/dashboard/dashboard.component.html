@@ -1,0 +1,87 @@
+
+
+
+<mat-sidenav-container fullscreen style="margin-top: 10px">
+    
+    <mat-sidenav #sidenav mode="push" >
+        
+        <mat-toolbar style="background-color: red; color: white;">
+            <span class="font fs-5 ml-10">Menú</span>
+            <span class="spacer"></span>
+       
+            <i class="material-symbols-outlined"  (click)="sidenav.toggle()" style="margin-left:80px; cursor: pointer;">arrow_back_ios</i>
+        </mat-toolbar>
+
+        <mat-nav-list>
+            <a routerLink="./listado"
+               mat-list-item
+               (click)="sidenav.toggle()">
+               <i class="material-symbols-outlined">edit</i>
+                <span class="font fs-5 ml-10">Estado y Edición</span>
+            </a>
+
+            <a routerLink="./edit-food"
+               mat-list-item
+               (click)="sidenav.toggle()" class="mt-30">
+                <i class="material-symbols-outlined">lunch_dining</i>
+                <span class="font fs-5 ml-10">Menu</span>
+            </a>
+
+            <a routerLink="./edit-offers"
+               mat-list-item
+               (click)="sidenav.toggle()" class="mt-10">
+               <i class="material-symbols-outlined">local_offer</i>
+                <span  class="font fs-5 ml-10">Ofertas</span>
+            </a>
+
+            <a routerLink="./edit-customer"
+            mat-list-item
+            (click)="sidenav.toggle()" class="mt-10">
+            <i class="material-symbols-outlined">account_circle</i>
+             <span  class="font fs-5 ml-10">Clientes</span>
+         </a>
+            
+        </mat-nav-list>
+        
+    </mat-sidenav>
+
+    <mat-toolbar >
+
+        
+        <button mat-icon-button  (click)="sidenav.toggle()">
+            <mat-icon>menu</mat-icon>
+        </button>
+
+    <div fxLayout="row wrap"  fxLayoutAlign="space-between center"  fxFlex="100" >
+
+        <div fxLayout="row wrap"  fxLayoutAlign="center"  fxFlex="25" >
+            <!-- <img src="assets/logo-header.png" alt="" fxFlex="55"> -->
+        </div>
+
+        <!-- margen derecho -->
+        <div fxLayout="row wrap"  fxLayoutAlign="end center"  fxFlex="75"  >
+
+     
+            <div fxLayout="row wrap"  fxLayoutAlign="end center"  fxFlex="100" >
+
+                <button  mat-mini-fab aria-label="Example icon button with a delete icon" style="transform: scale(1.1);"  >
+                    <mat-icon  >notifications</mat-icon>
+                </button>
+                
+                <!-- <i class="material-icons-outlined" style="transform: scale(1.2);">account_circle</i> &nbsp;&nbsp; -->
+                <img src="assets/user.png" alt="" style="margin-left:30px; cursor: pointer;" fxFlex.xs="18" fxFlex="5"  matTooltip="Valeria Gutierrez"> 
+                <!-- <mat-card-title class="font fs-2" >Gonzalez M.</mat-card-title> -->
+            </div>
+        
+      </div>
+    <!--end  margen derecho -->
+    </div>
+
+    </mat-toolbar>
+
+
+    <div class="container">
+            <router-outlet></router-outlet>
+    </div>
+
+</mat-sidenav-container>
