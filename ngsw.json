@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1660670154579,
+  "timestamp": 1660702574317,
   "index": "/food-app/index.html",
   "assetGroups": [
     {
@@ -13,11 +13,11 @@
       "urls": [
         "/food-app/favicon.ico",
         "/food-app/index.html",
-        "/food-app/main.f309ac582640e509.js",
+        "/food-app/main.f66e31392c4d0512.js",
         "/food-app/manifest.webmanifest",
         "/food-app/polyfills.9bdfa9e648edbe6f.js",
         "/food-app/runtime.0ff8542b5eb60d13.js",
-        "/food-app/styles.0a89980b5b0f610a.css"
+        "/food-app/styles.be3779cc3c725881.css"
       ],
       "patterns": []
     },
@@ -175,13 +175,13 @@
     "/food-app/background.47ced076a179255a.png": "c71bf2377ee81195971c30073e031a7dc1f9fb1c",
     "/food-app/favicon.ico": "22f6a4a3bcaafafb0254e0f2fa4ceb89e505e8b2",
     "/food-app/fontawesome-webfont.8a7cb27d142e3e19.ttf": "13b1eab65a983c7a73bc7997c479d66943f7c6cb",
-    "/food-app/index.html": "21e765dbd6d49fedb7271377c5274c796f99368b",
-    "/food-app/main.f309ac582640e509.js": "e6a959a9d58a3bdac30e76e92aeed9888d930b7f",
+    "/food-app/index.html": "4a2c069f815ef82629c8bb0ce3d8542224520cca",
+    "/food-app/main.f66e31392c4d0512.js": "c57e1aa563b9cb23b0088137454d17759c9d86b0",
     "/food-app/manifest.webmanifest": "8305d3bfcb75ca1c701eafb3e35dffc1dbc5b872",
     "/food-app/off4.dae4f53be098a3fe.png": "3a6b5811e159ac965e77ba8fe304d105fef8aad6",
     "/food-app/polyfills.9bdfa9e648edbe6f.js": "3dfaa31f768b71675a7cc2286f5cf857bb742801",
     "/food-app/runtime.0ff8542b5eb60d13.js": "766daa31aedd3a33068f8fa31aa977e3f57092a2",
-    "/food-app/styles.0a89980b5b0f610a.css": "5c1bd6ceb2b00b6fac03861e1a8ec8e5f7c39b0f"
+    "/food-app/styles.be3779cc3c725881.css": "e4b8e60554dd7e63c2134d2edf8568ba072a04d4"
   },
   "navigationUrls": [
     {
