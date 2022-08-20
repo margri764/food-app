@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1661021723423,
+  "timestamp": 1661024086553,
   "index": "/food-app/index.html",
   "assetGroups": [
     {
@@ -13,7 +13,7 @@
       "urls": [
         "/food-app/favicon.ico",
         "/food-app/index.html",
-        "/food-app/main.7dbe5d2034d79987.js",
+        "/food-app/main.08322dae86fba6a9.js",
         "/food-app/manifest.webmanifest",
         "/food-app/polyfills.9bdfa9e648edbe6f.js",
         "/food-app/runtime.0ff8542b5eb60d13.js",
@@ -68,6 +68,7 @@
         "/food-app/assets/icons/centrococina-512x512.png",
         "/food-app/assets/icons/centrococina-72×72.png",
         "/food-app/assets/icons/centrococina-96x96.png",
+        "/food-app/assets/logo-animated.gif",
         "/food-app/assets/logo-hamburger.png",
         "/food-app/assets/logo-header.png",
         "/food-app/assets/logo-letter.png",
@@ -136,6 +137,7 @@
     "/food-app/assets/icons/centrococina-512x512.png": "f86a203709278617f641eeabc3e6cedb4c93fa2c",
     "/food-app/assets/icons/centrococina-72×72.png": "e2713eb4c384096e6bd084939064e062c93c5754",
     "/food-app/assets/icons/centrococina-96x96.png": "fc50c59d5473f4d7157f5d1082f697b0065711c5",
+    "/food-app/assets/logo-animated.gif": "c655bee997195760c156ffc0335760f8fc7e0b16",
     "/food-app/assets/logo-hamburger.png": "f3997b014644b0ca5858a8c0d0e3094ea08964b9",
     "/food-app/assets/logo-header.png": "2524fcade33f13c2e42ef87635fef6990083cc8d",
     "/food-app/assets/logo-letter.png": "22866b07a7194462bdcfefede3402e85ad323599",
@@ -159,8 +161,8 @@
     "/food-app/background.47ced076a179255a.png": "c71bf2377ee81195971c30073e031a7dc1f9fb1c",
     "/food-app/favicon.ico": "22f6a4a3bcaafafb0254e0f2fa4ceb89e505e8b2",
     "/food-app/fontawesome-webfont.8a7cb27d142e3e19.ttf": "13b1eab65a983c7a73bc7997c479d66943f7c6cb",
-    "/food-app/index.html": "74e7f202b5d2f804e0dfd6bdb108e6e6b2a1faae",
-    "/food-app/main.7dbe5d2034d79987.js": "9c657619f35a487e1cf7d65e9ecb96df9ffd2692",
+    "/food-app/index.html": "bb2754b8ad7419c297b29637ec275dbffea67f98",
+    "/food-app/main.08322dae86fba6a9.js": "adcbe40a5003e2406d30e831e74285ec9e36c816",
     "/food-app/manifest.webmanifest": "fa373593b405cbca3179982592ff0a98f1487393",
     "/food-app/off4.dae4f53be098a3fe.png": "3a6b5811e159ac965e77ba8fe304d105fef8aad6",
     "/food-app/polyfills.9bdfa9e648edbe6f.js": "3dfaa31f768b71675a7cc2286f5cf857bb742801",
