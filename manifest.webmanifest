@@ -1,9 +1,9 @@
 {
   "name": "Centro Cocina",
-  "short_name": "food-app",
+  "short_name": "Shop Shell",
   "theme_color": "#1976d2",
   "background_color": "#fccc04",
-  "display": "standalone",
+  "display": "fullscreen",
   "scope": "./",
   "start_url": "./",
   "icons": [
