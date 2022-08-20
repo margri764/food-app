@@ -17,7 +17,7 @@ ngOnInit(): void {
 
   setTimeout( ()=>{
     this.route.navigateByUrl('home')
-})
+},4500)
 
 }
 

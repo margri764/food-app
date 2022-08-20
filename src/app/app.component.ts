@@ -34,10 +34,10 @@ export class AppComponent implements OnInit{
     
     this.router.navigateByUrl('start');
 
-    setTimeout(()=>{
-      // this.openDialog();
+    // setTimeout(()=>{
+    //   this.openDialog();
 
-    },10000)
+    // },10000)
   }
   
   changeBannerStatus(){
