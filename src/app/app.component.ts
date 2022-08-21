@@ -16,7 +16,8 @@ import { PopusComponent } from './shared/pages/popus/popus.component';
 export class AppComponent implements OnInit{
   title = 'food-app';
 
-  
+  height:string="300";
+  sizeScreen: number= 300;
   login:boolean=true;
   // en el oninit iria un servicio para cambiar el estado del login!!!!
   
@@ -30,23 +31,34 @@ export class AppComponent implements OnInit{
     
   }
   
+changeHeightModal(){
+  const size= screen.width;
+  this.height= size.toString();
+  console.log(this.height);
+}
+
+
   ngOnInit(): void {
     
+    this.changeHeightModal();
     this.router.navigateByUrl('start');
 
-    // setTimeout(()=>{
-    //   this.openDialog();
+    
 
-    // },10000)
+    setTimeout(()=>{
+      this.openDialog();
+
+    },10000)
   }
   
-  changeBannerStatus(){
-    this.login=this.authservice.getBannerLogin();
-    console.log('login desde app:', this.login)
-  }
+  // changeBannerStatus(){
+  //   this.login=this.authservice.getBannerLogin();
+  //   console.log('login desde app:', this.login)
+  // }
 
   openDialog() {
     this.dialog.open(PopusComponent, {
+     height: this.height,
      panelClass:"custom-modalbox",
    });
   }

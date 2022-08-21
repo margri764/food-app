@@ -21,16 +21,16 @@ export class LoginComponent implements OnInit {
   
   
   onSaveForm(){
-    this.router.navigateByUrl('home')
+
+    ( this.myForm.value['email'] == 'margri764@gmail.com'  && this.myForm.value['password'] == '123456' ) ? this.router.navigateByUrl('dashboard') :alert('error')
   }
   
   
   ngOnInit() {
       this.myForm = this.fb.group({
-        password: [ '' ],
         email:    [ '' ],
+        password: [ '' ],
     
-        // monto: ['', Validators.required ],
       });
 
   }

@@ -37,9 +37,8 @@ export class MoreComponent implements OnInit {
       break; 
       
       case 'geo':
-// <<<<<<< HEAD
-                    setTimeout(()=>{ this.router.navigateByUrl('geo')},1)
-                    this._bottomSheet.ngOnDestroy();
+                    // setTimeout(()=>{ this.router.navigateByUrl('geo')},1)
+                    // this._bottomSheet.ngOnDestroy();
       break; 
 
       case 'close':

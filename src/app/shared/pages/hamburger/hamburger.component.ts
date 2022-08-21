@@ -64,6 +64,15 @@ export class HamburgerComponent implements OnInit, AfterViewInit {
 
  }
 
+ async share() {
+  const image = await fetch("../../../../assets/food1.png");
+  const blob = await image.blob();
+  const file = new File([blob], 'image.jpg', { type: 'image/jpeg' });
+  navigator.share({ text: 'some_text', files: [file] } as ShareData);
+  
+}
+ 
+
 totalPurchase(){
   this.foodService.hamburger=this.hamburger;
   this.foodService.fries=this.fries;

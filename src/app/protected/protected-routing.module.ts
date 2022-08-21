@@ -7,6 +7,7 @@ import { EditFoodComponent } from './pages/edit-food/edit-food.component';
 import { EditOffersComponent } from './pages/edit-offers/edit-offers.component';
 import { EditPublicityComponent } from './pages/edit-publicity/edit-publicity.component';
 import { EditCustomersComponent } from './pages/edit-customers/edit-customers.component';
+import { AnalyticsComponent } from './pages/analytics/analytics.component';
 
 
 
@@ -19,6 +20,8 @@ const rutas: Routes = [
       { path: 'edit-offers', component: EditOffersComponent },
       { path: 'edit-publicity', component: EditPublicityComponent },
       { path: 'edit-customer', component: EditCustomersComponent },
+      { path: 'analytics', component: AnalyticsComponent },
+
 
       // { path: 'editar/:id', component: AgregarComponent },
       // { path: 'buscar', component: BuscarComponent },

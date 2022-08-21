@@ -9,6 +9,7 @@ import { AuthService } from 'src/app/services/auth/auth.service';
 export class BannerRegisterComponent implements OnInit{
 
   show: boolean=true;
+  
   constructor(
               private authservice : AuthService,
               private cdRef : ChangeDetectorRef,
@@ -18,7 +19,9 @@ export class BannerRegisterComponent implements OnInit{
 
 
 
-
+t(){
+  console.log('rrr');
+}
 
 
 ngOnInit(): void {

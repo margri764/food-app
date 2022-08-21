@@ -10,6 +10,7 @@ import { EditOffersComponent } from './pages/edit-offers/edit-offers.component';
 import { EditPublicityComponent } from './pages/edit-publicity/edit-publicity.component';
 import { EditDialogComponent } from './pages/edit-dialog/edit-dialog.component';
 import { EditCustomersComponent } from './pages/edit-customers/edit-customers.component';
+import { AnalyticsComponent } from './pages/analytics/analytics.component';
 
 
 
@@ -20,7 +21,8 @@ import { EditCustomersComponent } from './pages/edit-customers/edit-customers.co
     EditOffersComponent,
     EditPublicityComponent,
     EditDialogComponent,
-    EditCustomersComponent
+    EditCustomersComponent,
+    AnalyticsComponent
 
   ],
     imports: [

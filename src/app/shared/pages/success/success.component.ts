@@ -9,11 +9,20 @@ import { DeliveryComponent } from 'src/app/shared/pages/delivery/delivery.compon
 })
 export class SuccessComponent implements OnInit {
 
+height: string= '300';
   constructor(
               private dialog : MatDialog
   ) { }
 
+
+  
+      
+  
+  
+  
   ngOnInit(): void {
+    
+ 
 
     setTimeout(()=>{
       this.openDialog()
@@ -22,9 +31,7 @@ export class SuccessComponent implements OnInit {
 
   openDialog() {
     this.dialog.open(DeliveryComponent, {
-    //  maxHeight: '50vh',
-     height: '400px',
-     panelClass:"custom-modalbox",
+    panelClass:"custom-modalbox-success",
    });
   }
 }

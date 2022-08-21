@@ -1,9 +1,9 @@
 {
   "name": "Centro Cocina",
-  "short_name": "Shop Shell",
+  "short_name": "Shop Martinez",
   "theme_color": "#1976d2",
   "background_color": "#fccc04",
-  "display": "fullscreen",
+  "display": "standalone",
   "scope": "./",
   "start_url": "./",
   "icons": [

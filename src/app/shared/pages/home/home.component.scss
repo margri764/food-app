@@ -48,18 +48,14 @@ mat-form-field.mat-form-field{
 
 .mini-logo{
     cursor: pointer;
-    transform: scale(0.7);
+    // transform: scale(0.7);
 
     filter: drop-shadow(0px 0px 3px #000000);
     -webkit-filter: drop-shadow(0px 0px 3px #000000);
     -moz-filter: drop-shadow(0px 0px 3px #000000);
 }
 
-.mini-logo:hover{
-filter: drop-shadow(0px 0px 3px #000000);
-    -webkit-filter: drop-shadow(0px 0px 7px #000000);
-    -moz-filter: drop-shadow(0px 0px 3px #000000);
-}
+
 
 
 .menu{
@@ -105,7 +101,7 @@ filter: drop-shadow(0px 0px 3px #000000);
 //Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 575px) {
 
-// <<<<<<< HEAD
+
     .font{
         font-size: 1.2em;
     }
@@ -114,9 +110,7 @@ filter: drop-shadow(0px 0px 3px #000000);
         font-size: 1.6em;
         font-weight: bold;
     }
-// =======
-    
-// >>>>>>> pwa
+
     
    
 }
