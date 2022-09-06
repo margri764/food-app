@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1662427221259,
+  "timestamp": 1662430311159,
   "index": "/food-app/index.html",
   "assetGroups": [
     {
@@ -13,7 +13,7 @@
       "urls": [
         "/food-app/favicon.ico",
         "/food-app/index.html",
-        "/food-app/main.21de650742ef5566.js",
+        "/food-app/main.6b6879d2d97ae779.js",
         "/food-app/manifest.webmanifest",
         "/food-app/polyfills.9bdfa9e648edbe6f.js",
         "/food-app/runtime.0ff8542b5eb60d13.js",
@@ -165,8 +165,8 @@
     "/food-app/background.47ced076a179255a.png": "c71bf2377ee81195971c30073e031a7dc1f9fb1c",
     "/food-app/favicon.ico": "22f6a4a3bcaafafb0254e0f2fa4ceb89e505e8b2",
     "/food-app/fontawesome-webfont.8a7cb27d142e3e19.ttf": "13b1eab65a983c7a73bc7997c479d66943f7c6cb",
-    "/food-app/index.html": "62144a5e563ba3a704445d86aa1652ec50965c4f",
-    "/food-app/main.21de650742ef5566.js": "65d2cd2241d402d4a7aa00502a38fd404a3a670b",
+    "/food-app/index.html": "64080ebbc2cb5942583e069c2e20d6faa828a337",
+    "/food-app/main.6b6879d2d97ae779.js": "0501d4a9656c76eb3a4380a05a1b270510594a3c",
     "/food-app/manifest.webmanifest": "14b31475aeab678434ea5ea23c40076269fb419f",
     "/food-app/off-2.6afda31b3a3b03e4.jpg": "37ddd8b3fab73d20c8bb336ae56e46e2433ef876",
     "/food-app/polyfills.9bdfa9e648edbe6f.js": "3dfaa31f768b71675a7cc2286f5cf857bb742801",
